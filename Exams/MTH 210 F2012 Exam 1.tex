@@ -1,0 +1,333 @@
+\documentclass[addpoints]{exam}
+
+% \pagestyle{empty}                       %no page numbers
+% \thispagestyle{empty}                   %removes first page number
+% \setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+
+%% Definitions
+\def\vi{\mathbf{i}}
+\def\vj{\mathbf{j}}
+\def\vk{\mathbf{k}}
+\def\vr{\mathbf{r}}
+\def\vu{\mathbf{u}}
+\def\vv{\mathbf{v}}
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheader{\textbf{MTH 210 (Talbert)}}{\textbf{Exam 1 --- \numpoints \ points}}{\textbf{October 1, 2012}}
+\runningheader{MTH 210}
+{MTH 210 Test 1, Page \thepage\ of \numpages}
+{Oct 1, 2012}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+\begin{document}
+
+		
+\vspace*{0pt}
+
+\noindent
+Name: \underline{\hspace{2in}} \\
+
+
+\noindent
+\textbf{Instructions}: Welcome to Exam 1. You may use one $3 \times 5$ notecard with notes, and a calculator. You may NOT use any device that can communicate  with another device. The backs of each page are blank; use them if needed. On all questions other than multiple choice, give complete and correct solutions; answers without accompanying work will be given no credit. 
+
+The test will end at the normal ending time of your class (10:50am for Section 01 and 11:50am for Section 02). No extensions or extra time will be given unless you have received prior permission from the instructor.
+
+\begin{questions}
+
+	
+\uplevel{\emph{Items 1---10 are multiple choice questions that address a variety of learning objectives. Please circle the ONE response you believe is most correct. You do not need to justify your answer.}}
+
+\question[2] Which of the following are statements? 
+\begin{parts}
+	\part $3^2 + 4^2 = 5^2$. 
+	\part $a^2 + b^2 = c^2$. 
+	\part If $x^2 = 4$, then $x = 2$. 
+	\part All of the above
+	\part Only (a) and (c)
+\end{parts}
+
+\question[2] Every conditional statement $P \rightarrow Q$ is logically equivalent to
+\begin{parts}
+	\part Its converse
+	\part Its contrapositive
+	\part Its negation
+	\part Its equivalent biconditional statement $P \leftrightarrow Q$
+	\part More than one of the above (be ready to specify)
+\end{parts}
+
+\question[2] Let $A = \{ 2, 4, 6, 8\}$ and $B = \{ x \in \mathbb{N} \, | \, x^2 < 100 \}$. Then
+\begin{parts}
+	\part $A \subseteq B$
+	\part $B \subseteq A$
+	\part $A = B$
+	\part All of the above
+	\part None of the above
+\end{parts}
+
+\question[2] What is the smallest nonnegative integer that is congruent to 1179 modulo 10?
+\begin{parts}
+	\part $0$
+	\part $1$
+	\part $9$
+	\part $79$
+	\part This number does not exist
+\end{parts}
+
+\question[2] 	Consider the statement:
+	\begin{quote}
+		If $a \equiv 0 \pmod {12}$, then $6 | a$. 
+	\end{quote}
+If you tried to prove this using proof by contraposition, you would assume
+	\begin{parts}
+		\part $a \equiv 0 \pmod {12}$
+		\part $a \not \equiv 0 \pmod {12}$
+		\part $6 | a$
+		\part $6 \not | a$
+		\part $a \equiv 0 \pmod {12}$ and $6 \not | a$
+	\end{parts}
+
+\pageturn
+
+\question[2] Under which of the following operations is the set of natural numbers closed? 
+		\begin{parts}
+			\part Addition
+			\part Subtraction
+			\part Multiplication
+			\part All of the above
+			\part Just (a) and (c)
+		\end{parts}
+
+
+\question[2] The set of irrational numbers 
+	\begin{parts}
+		\part Is closed under addition
+		\part Is closed under division
+		\part Is closed under multiplication
+		\part All of the above
+		\part None of the above
+	\end{parts}
+
+\question[2] Consider the statement: 
+			\begin{quote}
+				There exists no prime number that is congruent to $0$ modulo $4$. 
+			\end{quote}
+		The negation of this statement would say
+		\begin{parts}
+			\part There exists a prime number that is congruent to $0$ modulo $4$.
+			\part There exists a prime number that is not congruent  to $0$ modulo $4$.
+			\part There exists a prime number that is congruent to $1$ modulo $4$. 
+			\part Every prime number is congruent to $0$ modulo $4$.
+			\part Every prime number fails to be congruent to $0$ modulo $4$. 
+		\end{parts}
+
+
+\question[2] Which of the following is a valid set of cases to be used in a proof involving an integer $n$?
+	\begin{parts}
+		\part Two cases: $n < 0$ and $n > 0$
+		\part Two cases: $n$ prime, $n$ not prime
+		\part Three cases: $n \equiv 0 \pmod 4$, $n \equiv 1 \pmod 4$, and $n \equiv 2 \pmod 4$
+		\part All of the above
+		\part Just (a) and (b)
+	\end{parts}
+	
+	
+\question[2] Consider the statement: 
+\begin{quote}
+	For all integers $a,b,c$, if $a | (bc)$ then either $a | b$ or $a | c$. 
+\end{quote}
+Which of the following is an acceptable counterexample for this statement? 
+	\begin{parts}
+		\part $a = 2$, $b = 4$, $c = 6$
+		\part $a = 2$, $b = 3$, $c = 6$
+		\part $a = 4$, $b = 6$, $c = 2$
+		\part $a = 5$, $b = 6$, $c = 2$
+		\part There are no counterexamples to this statement because the statement is true
+	\end{parts}
+
+\pageturn
+
+
+\uplevel{\emph{The next several items are problems to solve. Each item is tagged with a list of learning objectives it assesses. Be sure to give complete, clear, and correct solutions to each, not just answers.}}
+	
+
+\uplevel{The following item assesses several learning objectives related to methods of proof, phrasing of logical statement, and selection of proof strategy.}
+
+\question Consider the statement: 
+\begin{center}
+	If $x \cdot y$ is even, then $x$ is even or $y$ is even. 
+\end{center}
+	\begin{parts}
+		\part[6] Suppose you were going to prove this by a direct proof. What would you assume, and what would you try to prove? Give the SPECIFIC statements and information you would assume or prove. 
+		
+		\vspace{1.7in}
+		
+		\part[6] Suppose you were going to prove this by contraposition. What would you assume, and what would you try to prove? Give the SPECIFIC statements and information you would assume or prove. 
+		
+		\vspace{1.7in}
+		
+		\part[6] Suppose you were going to prove this by contradiction. What would you assume, and what would you try to accomplish in a proof? Give the SPECIFIC statements and information you would assume and an idea of what, specifically, what contradiction you might encounter. 
+		
+		\vspace{2in}
+		
+		\part[2] Of the three methods above, which would you choose to use in proving this statement, and why? 
+	
+		
+	\end{parts}
+
+
+\pageturn
+
+% \question[6] Choose EXACTLY ONE of the following logical equivalencies from Theorem 2.8 and prove it using a truth table. Circle below which ONE part you are doing. 
+% \begin{center}
+% 	On this problem I am working part (circle one): \textbf{A} / \textbf{B} / \textbf{C}. 
+% \end{center}
+% 	\begin{description}
+% 		\item[(A)] $(P \leftrightarrow Q) \equiv (P \rightarrow Q) \wedge (Q \rightarrow P)$
+% 		\item[(B)] $P \vee (Q \wedge R) \equiv (P \vee Q) \wedge (P \vee R)$
+% 		\item[(C)] $P \rightarrow (Q \vee R) \equiv (P \wedge \neg Q) \rightarrow R$
+% 	\end{description}
+	
+
+\uplevel{The following item assesses the learning objectives: \textbf{Use truth tables to determine if two statements are logically equivalent; State the converse and contrapositive of a conditional statement.}}
+	
+\question The \emph{inverse} of the conditional statement ``If $P$, then $Q$'' is the statement ``If not $P$, then not $Q$.'' In notation, the inverse of 	$P \rightarrow Q$ is $\neg P \rightarrow \neg Q$.
+	\begin{parts}
+		\part[6] Using a truth table, determine whether a conditional statement and its inverse are logically equivalent. 
+		
+		\vspace{2in}
+		
+		\part[4] Give an example in plain English of a conditional statement and its inverse and explain, again in plain English to someone who does not know truth tables, why the two statements are or are not logically equivalent.
+		
+		\vspace{3in}
+		
+		\part[4] Show that the inverse of a conditional statement is logically equivalent to the converse of that conditional statement. (There is more than one way to do this.) 
+	\end{parts}
+
+
+ 
+
+% \question Consider the statement: 
+% \begin{center}
+% 	If $p$ is a prime number, then either $p \equiv 1 \pmod 4$ or $p \equiv 3 \pmod 4$.
+% \end{center}
+% 	\begin{parts}
+% 		\part State the converse of this statement. 
+% 		\part State the contrapositive of this statement. 
+% 		\part Translate the original statement into one that has a universal or existential quantifier on it and write the statement entirely in logical symbols. 
+% 		\part Write the negation of this statement as a quantified statement (using 
+% 	\end{parts}
+
+
+\pageturn
+
+\uplevel{The following item assesses the learning objectives: \textbf{Define the term ``open sentence" (a.k.a. ``predicate" or ``propositional function") and distinguish between an open sentence and a logical statement.; Write the contents of a set using the roster method; Determine the truth set of an open sentence; Write the contents of a set using set builder notation.}}
+
+\question Assume that the universal set for this problem is $\mathbb{Z}$. Consider the following sentence: 
+\[ (\exists t \in \mathbb{Z})(t \cdot x = 20) \]
+	\begin{parts}
+		\part[4] Explain why this sentence is \emph{not} a statement but rather a predicate. (``There's a variable in it'' is not a sufficient explanation because some sentences with variables actually are statements. Be specific here.) 
+		
+		\vspace{2in}
+		
+		
+		\part[8] What is the truth set for this predicate? State your answer in set-builder and roster notation and give a brief explanation of your reasoning. 
+		
+		\vspace{2in}
+		
+		\part[3] Write the negation of the predicate above. 
+		
+	\end{parts}
+
+
+\pageturn
+
+\question Here is a collection of questions about integer congruence and divisibility: 
+	\begin{parts}
+		\part[3] Find five integers, at least one of which is negative, that are congruent to 12 modulo 27. 
+		
+		
+		\vspace{2in}
+		
+		\part[6] If $n$ is a positive integer, the \emph{factorial function} $\text{\textbf{fact}}(n)$ is defined by 
+		\[ \text{\textbf{fact}}(n) = n \cdot (n-1) \cdot (n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1 \]
+		For example, $\text{\textbf{fact}}(4) = 4 \cdot 3 \cdot 2 \cdot 1 = 24$. Explain why $\text{\textbf{fact}}(n) \equiv 0 \pmod {10}$ whenever $n \geq 5$. (An ``explaination'' means not exactly a proof, but a convincing, correct, and mathematically precise argument that does not have to be completely formal.)  
+	\end{parts}
+
+\pageturn
+
+
+\uplevel{The following item assesses your overall skill at constructing simple proofs.}
+
+\question[12] Below are three true statements. Choose EXACTLY ONE of these and write up a complete formal paragraph for it that adheres to the Writing Guidelines for mathematical work. Do NOT include scratch work or know-show tables. 
+
+Circle below which ONE part you are doing. 
+\begin{center}
+	On this problem I am working part (circle one): \textbf{A} / \textbf{B} / \textbf{C}. 
+\end{center}
+
+	\begin{parts}
+		\part Prove that for all real numbers $a$ and $b$, if $a>0$ and $b>0$ then 
+		\[ \frac{2}{a} + \frac{2}{b} \neq \frac{4}{a+b}  \]
+		\part Prove that for every positive real number $x$, if $x$ is irrational, then $\sqrt{x}$ is irrational.
+		\part Prove that for every integer $a$, if $a \equiv 3 \, (\text{mod} \, 8)$, then $a^2 \equiv 1 (\text{mod} \, 8)$.
+	\end{parts}
+		
+		
+
+\pageturn
+
+\uplevel{The following items are for reflection and application. They are to be completed outside of class and returned to me by email (\textbf{talbertr@gvsu.edu}) before \textbf{noon on Tuesday, October 2}. Please use as your subject line: 
+\begin{center}
+	[Lastname] [section] final item \#exam1
+\end{center}
+where [Lastname] is replaced by your last name and [section] is replaced with either 01 or 02. The hashtag (\#exam1) is important for filing purposes, so please remember to include it. \textbf{No late submissions will be accepted. } Also please type your responses directly into the body of your email --- \textbf{do not send email attachments this time}. 
+}
+
+\question[8] Here is a collection of questions about the concept of the mathematical proof. You can address these one at a time, or in one semi-large essay --- but make sure you touch on all of these. Give at least three thoughtful sentences to each one. 
+	\begin{parts}
+		\part What is a mathematical proof? 
+		\part Why do people write mathematical proofs? (Other than the fact that some of them are in MTH 210 and have to do so for a grade?) 
+		\part I had a professor in graduate school once who had a paper rejected by a journal because one of his proofs had a flaw in it. ``That's OK,'' he said, ``the proof is wrong but the theorem is definitely true.'' Is this possible? How? 
+	\end{parts}
+
+\question[2] Please give an overall evaluation of the course so far. Address these questions: 
+\begin{itemize}
+	\item What's been particularly helpful for you in learning the material so far? 
+	\item What are some things we could change in the course that would help you learn better?
+	\item Looking ahead in the course (you might consult the Calendar before reading further), what are some things you are looking forward to, and some potential concerns you may have about the course as we move forward? 
+\end{itemize}
+
+	
+\end{questions}
+
+		
+\end{document}

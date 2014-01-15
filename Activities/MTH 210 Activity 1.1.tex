@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{August 29, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Activity: Statements and Conditional Statements} \\
+			\end{large}
+		\end{center}
+		
+Today's activity is considered a \textbf{half-time activity}, so it's worth 5 points. 		
+		
+\subsection*{Problems for Class Work}	
+		
+Please work on the following in groups. It's expected that you'll need to ask questions of each other and of me during the time you're working --- so please ask questions over anything you feel you need help on. 
+
+\begin{enumerate}
+	\item In the reading, you learned about the concept of \textbf{closure} of a set of numbers under an operation. For example, the set $\mathbb{Z}$ of integers is ``closed under addition'' because if $a$ and $b$ are any two integers, then $a+b$ is also an integer. The sets $\mathbb{N}$, $\mathbb{Q}$, and $\mathbb{R}$ are also closed under addition. However, sets are not always closed under different operations --- for example, $\mathbb{Z}$ is not closed under division, because even if $a$ and $b$ are integers, it's not always the case that $a/b$ is an integer. (Counterexample: $a=5$ and $b=2$.) 
+	
+Is the set of \emph{positive} real numbers closed under subtraction? If you think so, explain why (without just stating the definition of closure; explain \emph{why} the definition is satisfied). 
+	
+	
+	\item (\emph{Adapted from Section 1.1, Exercise 10}) \  We're getting the message from Monday's class and the reading for this section that exploring mathematical phenomena to make conjectures is the essential activity in mathematics. For example, if you look at the successive powers of 2 ($2^1, 2^2, 2^3, 2^4, \dots$) and examine the ``ones'' digit of these numbers, we could make the following conjectures: 
+	\begin{description}
+		\item[Conjecture:] If $n$ is a natural number, then the ones digit of $2^n$ must be $2,4,6$ or $8.$
+		\item[Conjecture:] The units digits of the successive powers of $2$ repeat according to the pattern $2,4,8,6,2,4,8,6,\dots$. 
+	\end{description}
+Try your hand at forming conjectures yourself. Choose EXACTLY ONE of the following and try to come up with the conjecture being asked for. Note that you do NOT need to supply any proof for your conjectures yet. If you get done quickly, make sure everyone in your group understands, and then try the other conjecture. 
+	\begin{enumerate}
+		\item Consider the ones digit of numbers of the form $7^n - 2^n$ where $n$ is a natural number. (That is, look at $7-2$, $7^2 - 2^2$, $7^3 - 2^3$, etc.) Can you formulate a conjecture about what you are seeing? If so, formulate it in the form of a conditional statement: ``If $n$ is a natural number, then \underline{\hspace{0.3in}}.'' Include both your conjecture and the results of your experimentation. 
+		\item Let $f(x) = e^{2x}$. Calculate the first five derivatives of this function. What do you observe? Formulate a conjecture that appears to be true. The conjecture should be written as a conditional statement in the form: ``If $n$ is a natural number, then \underline{\hspace{0.3in}}.'' Include both your conjecture and the results of your experimentation. 
+	\end{enumerate}
+	
+\end{enumerate}
+
+
+% \subsection*{If you complete all of the above:}
+% 
+% If you are done with all the problems above, you may attempt the following for \textbf{2 points additional credit}. Work on these extra problems will add to your point total as well as the total amount of points possible. I will look at any work you provide on this additional problem, but you will only receive additional credit if your group completes the two main problems above with a score of 4/5 or higher. That is, you need to have a completed group writeup that is largely free of mathematical or writing errors on the problems above in order to receive bonus credit for the following. 
+% 
+% 
+% \begin{itemize}
+% 		\item (\emph{Adapted from Section 1.1, Exercise 7}) \ Here is a statement of a theorem which can be proven using the quadratic formula. For this theorem, $a$, $b$, and $c$ are real numbers. 
+% 		\begin{description}
+% 			\item[Theorem:] If $f$ is a quadratic function of the form $f(x) = ax^2 + bx + c$ and $ac < 0$, then the function $f$ has two $x$-intercepts. 
+% 		\end{description}
+% 	For example, in the function $f(x) = 2x^2 + 3x - 4$, we have $a = 2$, $b=3$, and $c = -4$. Using \textbf{only} this theorem, what can be concluded about the functions given by the following formulas? Note that the answer may be ``nothing can be concluded''; if that's the case, explain why. Again: Use ONLY the theorem, not graphing calculators or other tools. 
+% 		\begin{enumerate}
+% 			\item $g(x) = -8x^2 + 5x + 2$
+% 			\item $h(x) = -\dfrac{71}{99}x^2 + 210$
+% 			\item $j(x) = -x^4 + x^3 + 9$
+% 		\end{enumerate}
+% \end{itemize}
+
+\subsection*{Specifications}
+
+Please hand in a clean copy of your work by the end of your class period. This copy should be written up on paper neatly and in an organized way. All members of the group working on problems should add their names to the paper. Do not include the paper with the problems on it. 
+
+All groups are expected to submit their work by the end of class. I have the right to grant extensions if the majority of groups are working productively but still not completing the problems on time. \emph{However}: Don't expect extensions. Work as if the end of class were a hard deadline. \\
+
+Half-time Class Work is graded on a scale of 0---5 based on correctness, organization, and effort. Please see the grading rubric (separate) for details; this is found on Blackboard under Course Documents (the last item on the Course Documents page). 
+
+\end{document}

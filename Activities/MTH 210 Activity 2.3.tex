@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{September 10, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Open Sentences and Sets} \\
+			\end{large}
+		\end{center}
+		
+This is a FULL-TIME activity worth 10 points. 
+
+
+\begin{enumerate}
+	\item \textbf{(Review from \S2.2) }\ For both of the conditional statements below, write the contrapositive of the statement and then write the negation of the statement as a disjunction. 
+	\begin{enumerate}
+		\item For all integers $n$, if $n$ is even, then $n^3$ is even. 
+		\item For all students in MTH 210, if you do your first portfolio problem drafts in \LaTeX, then you'll get 2 bonus points. 
+	\end{enumerate}
+	
+	\item \textbf{(Review from \S2.2)} \ Use previously-proven logical equivalencies, like those in Theorem 2.8, and not truth tables to prove that 
+	\[ [P \rightarrow (Q \wedge R) ] \equiv (P \rightarrow Q) \wedge (P \rightarrow R) \]
+	See Progress Check 2.7 and/or Screencast 2.2.4 for similar examples. Hint: As a first step, you could rewrite the conditional statement on the left-hand side as a disjunction using Conditional Statements rule \#2 from Theorem 2.8. This is the same problem that you did on Friday; if you finished, please write ``We finished this on Friday'' on your paper. Otherwise please continue this problem until it's completed.
+	
+	
+	\item Use the roster method to specify the elements in each of the following sets. 
+	\begin{enumerate}
+		\item $\{ x \in \mathbb{Z} \, | \, x^2 < 25 \}$
+		\item $\{ y \in \mathbb{Q} \, | \, |x - 5| = 7.5 \}$
+		\item $\{ n = 6k + 1 \, | \, k \in \mathbb{Z} \}$ 
+	\end{enumerate}
+	
+	\item Each of the following sets is defined using the roster method. For each, determine four more elements of each set other than the ones listed. Then, use set builder notation to describe each set. Note that there could be more than one way to write each set correctly in set builder notation. 
+	\begin{enumerate}
+		\item $\{ 3, 9, 15, 21, 27, \dots \}$
+		\item $\{ 0, 4, 8, \dots, 96, 100\}$
+		\item $\{ 1, 2, 4, 8, 16, 32, \dots \}$
+	\end{enumerate}
+	
+	\item Use the roster method to specify the truth set for each of the following open sentences. The universal set for each of thesse is the set of integers $\mathbb{Z}$. 
+	\begin{enumerate}
+		\item $n^3 = 27.$
+		\item $n^3 = 100$. (Be careful. What's the universal set?) 
+		\item $n$ is an even integer that is greater than $10$. 
+	\end{enumerate}
+	
+	
+\end{enumerate}
+	
+\subsection*{If you finish all of these...}
+
+
+In Section 1.1, we studied some of the closure properties of the standard number systems. We can extend this idea to other sets of numbers: 
+\begin{itemize}
+	\item We say that a set $A$ of numbers is closed under addition provided that whenever $x,y \in A$, the number $x+y \in A$. 
+	\item We say that a set $A$ of numbers is closed under multiplication provided that whenever $x,y \in A$, the number $xy \in A$.
+\end{itemize}
+Which of the following sets is closed under addition? Which is closed under multiplication? Explain how you know in each case with either a proof or a counterexample. 
+	\begin{enumerate}
+		\item $\{ 1, 4, 7, 10, 13, \cdots \}$ 
+		\item $\{ 3n \, | \, n \in \mathbb{Z} \}$
+		\item ${\left\{ \left. \dfrac{1}{2^n} \, \right| \, n \in \mathbb{N}\right\}}$
+	\end{enumerate}
+
+
+Successful completion of this additional problem will add 2 points to both your Class Work score and the overall Class Work total. However, you must attain a score of at least 8/10 on the main Class Work to receive these points. (That is, you've completed all the problems and they are mostly correct.) 	
+	
+\subsection*{Specifications}
+
+Please hand in a clean copy of your work by the end of your class period. This copy should be written up on paper neatly and in an organized way. All members of the group working on problems should add their names to the paper. Do not include the paper with the problems on it. 
+
+All groups are expected to submit their work by the end of class. I have the right to grant extensions if the majority of groups are working productively but still not completing the problems on time. \emph{However}: Don't expect extensions. Work as if the end of class were a hard deadline. 
+\end{document}

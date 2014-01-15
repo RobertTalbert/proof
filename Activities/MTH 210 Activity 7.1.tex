@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{November 26, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Relations} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+\begin{enumerate}
+	
+	\item Let $A = \{ a,b,c\}$ and let $R = \{ (a,a), (a,c), (b,b), (b,c), (c,a), (c,b)\}$. This makes $R$ a relation on $A$. Are the following statements true, or are they false? State your answer and explain each one. 
+	\begin{enumerate}
+		\item For each $x \in A$, $(x,x) \in R$. 
+		\item For every $x \in A$, if $(x,y) \in R$, then $(y,x) \in R$. 
+		\item For every $x \in A$, if $(x,y) \in R$ and $(y,z) \in R$, then $(x,z) \in R$. 
+		\item $R$ is a function from $A$ into $A$. 
+	\end{enumerate}
+	
+	\item Draw the directed graph for the relation $R$ in problem 1. Does the directed graph help you answer the questions more easily? 
+	
+	\item Let $U = \{x,y,z\}$ and recall that $\mathcal{P}(U)$ is the power set of $U$, that is, the set whose elements are all the subsets of $U$. Define a relation $R$ on $\mathcal{P}(U)$ by: 
+\[ R = \{ (S, T) \in \mathcal{P}(U) \times \mathcal{P}(U) \, | \, S \subseteq T \} \]
+	\begin{enumerate}
+		\item List the elements of $\mathcal{P}(U)$. There should be eight of these. 
+		\item Draw the directed graph for the relation $R$. Note that the number of vertices in this graph should equal the number you found in part (a). 
+		\item Is it the case that for each $S \in \mathcal{P}(U)$, $(S,S) \in R$? Why or why not? 
+		\item Is it the case that for each $S,T \in \mathcal{P}(U)$, if $(S,T) \in R$, then $(T,S) \in R$? Why or why not? 
+		\item Is it the case that for each $S,T, V \in \mathcal{P}(U)$, if $(S,T) \in R$ and $(T,V) \in R$, then $(T,V) \in R$? Why or why not? 
+	\end{enumerate}
+
+
+	
+\end{enumerate}
+
+\section*{Parameters}
+
+If your group finishes your work, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

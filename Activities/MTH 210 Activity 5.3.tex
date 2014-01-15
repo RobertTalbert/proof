@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{October 22, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Properties of Set Operations} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+Give complete proofs for ALL of the statements below. Some of these are very short. You will submit this proof in a formal writeup at the end of the class. For all of these statements, $A$ and $B$ are sets that are subsets of some universal set $U$. 
+
+\begin{enumerate}
+	\item Using the choose-an-element approach, prove that for all sets $A,B$ in some universal set $U$, we have $(A \cap B)^c = A^c \cup B^c$. (This is one of De Morgan's Laws. The other De Morgan's Law is proved on pp. 248--249.) 
+	\item Using the algebra-of-sets approach, prove that  for all sets $A,B$ in some universal set $U$, we have  $A = (A-B) \cup (A \cap B)$.
+	
+	\item Choose ONE of the following and determine whether it is a true statement or a false statement. If the statement is false, give a specific counterexample. If the statement is true, give a proof (your choice of approach). 
+	\begin{enumerate}
+		\item $A - (A \cap B^c) = A \cap B$
+		\item $(A^c \cup B^c)^c \cap A = A - B$
+		\item $(A \cup B) - A = B - A$
+	\end{enumerate}
+Your group will receive +1 bonus credit on class work for every additional statement you successfully solve past the first one. 
+	
+	 
+	
+\end{enumerate}
+
+\section*{Parameters}
+
+If your group finishes the proof you're assigned, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

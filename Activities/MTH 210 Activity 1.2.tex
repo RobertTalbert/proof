@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{August 31, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Activity: Constructing Direct Proofs} \\
+			\end{large}
+		\end{center}
+		
+This class activity is a GROUP activity. You'll be put into groups of 3 or 4 through random selection. Introduce yourselves, and then get right to work: 
+
+\begin{enumerate}
+	\item Consider the statement: 
+	\begin{center}
+		If $m$ is an even integer and $n$ is an integer, then $m \cdot n$ is an even integer.
+	\end{center}
+Below is a partially filled-in know-show table. Fill in the blanks with statements or parts of statements (under the ``Know'' column) and justifications or parts of justifications (under the ``Reason'' column). Write up your result on a separate page (i.e. don't just fill in the blanks and hand this page in). 
+
+		\begin{tabular}{c|l|l}
+		Step & Know & Reason \\ \hline
+		P & $m$ is even and $n$ is an integer &  \\ 
+		P1 &      & Definition of ``even'' \\
+		P2 & $mn = \underline{\hspace{0.3in}}$ & Substitution \\ 
+		P3 &       & Algebra \\ 
+		P4 &       & Closure properties of the integers \\ 
+		Q1 & There exists an integer $q$ such that $mn = \underline{\hspace{0.3in}}$ & Use $q = \underline{\hspace{0.3in}}$ \\ 
+		Q &   &   
+		\end{tabular}
+		
+	\item In line P4 above, we used the ``Closure properties of the integers'' (specifically, the fact that the set of integers is closed under addition and multiplication) to justify a step. Why is this step necessary? 
+	
+	\item Construct a know-show table for each of the following statements: 
+	\begin{enumerate}
+		\item If $n$ is an odd integer, then $n^2$ is an odd integer. 
+		\item If $m$ is an even integer, then $3m^2 + 2m + 3$ is an odd integer. 
+	\end{enumerate}
+	
+	\item Choose exactly one of the know-show tables from the previous question and convert it into a formal proof that abides by the writing guidelines spelled out in Section 1.2. 
+	
+\end{enumerate}	
+	
+\subsection*{If you finish all of these...}
+
+...then work in your group on the following: 
+\begin{itemize}
+	\item Write a know-show table and then a formal proof for the statement: If $m$ and $n$ are odd integers, then $mn+7$ is even. 
+	\item Let $ax^2 + bx + c$ be a second-degree polynomial with $a \neq 0$. Prove that the sum of the solutions to the equation $ax^2 + bx + c = 0$ is $-b/a$. 
+	\item Let $ax^2 + bx + c$ be a second-degree polynomial with $a \neq 0$. Prove that the product of the solutions to the equation $ax^2 + bx + c = 0$ is $c/a$. 
+\end{itemize}
+Each of these additional problems will add 2 points to both your Class Work score and the overall Class Work total. However, you must attain a score of at least 8/10 on the main Class Work to receive these points. (That is, you've completed all the problems and they are mostly correct.) 	
+	
+	
+\subsection*{Specifications}
+
+Please hand in a clean copy of your work by the end of your class period. This copy should be written up on paper neatly and in an organized way. All members of the group working on problems should add their names to the paper. Do not include the paper with the problems on it. 
+
+All groups are expected to submit their work by the end of class. I have the right to grant extensions if the majority of groups are working productively but still not completing the problems on time. \emph{However}: Don't expect extensions. Work as if the end of class were a hard deadline. 
+\end{document}

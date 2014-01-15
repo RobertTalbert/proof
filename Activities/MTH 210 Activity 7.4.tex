@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{December 3, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Modular Arithmetic} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problem of the Day}
+
+Choose ONE of the following to do: 
+ 
+
+\begin{enumerate}
+
+
+		\item This problem is for those who want to work with divisibility tests, like the one for divisibility by 3 explored in Screencast 7.4.3. 
+		\begin{enumerate}
+			\item The divisibility test for 3 and for 9 say the same basic thing: If an integer's digit sum is divisible by 3 (or 9), then the integer itself is divisible by 3 (or 9). Does this trick work for 11? That is, if an integer's digit sum is divisible by 11, does it follow that the integer itself is divisible by 11? 
+			\item Here's a test for divisibility by 11: 
+			\begin{quote}
+				If an integer is such that the difference between the sum of the odd-numbered digits (first, third, fifth, etc.) and the sum of the even-numbered digits (second, fourth, sixth, etc.) is divisible by 11, then the integer itself is divisible by 11. 
+			\end{quote}
+			Check that this test works (using both an example and a non-example) and then prove that it works in the case of a five-digit integer. Hint: As in the proof of divisibility by 3, let $n$ be the integer in question and start by writing 
+			\[ n = d_5 \times 10^5 + d_4 \times 10^4 + d_3 \times 10^3 + d_2 \times 10^2 + d_1 \times 10^1 + d_0 \]
+			Here are some questions to answer before you prove this:
+			\begin{itemize}
+				\item What are the odd digits and the even digits here? And, does it matter which group of digits is which in the context of the divisibility test? 
+				\item What does it mean to say that ``the difference between the sum of the odd-numbered digits and the sum of the even-numbered digits is divisible by 11'' in terms of $d_0, d_1, \dots, d_5$? 
+				\item What are the equivalence classes of $1, 10, 100, 1000$, and $10000$ mod 11? 
+				\item Why is $[10] = [-1]$ mod 11? 
+				
+			\end{itemize}
+			
+			
+			
+		\end{enumerate}
+		
+		\item This problem is for those who want to work with the \emph{affine cipher} described and instantiated in Screencast 7.4.4\footnote{If you liked that example and have space in your schedule in Winter 2014, I will be teaching a new General Education course called \textbf{MTH 312: Cryptography and Privacy} that will go into this and many other aspects of cryptography and information security from a mathematical perspective.}. Let $m = 10$ and $b = 5$. 
+		\begin{enumerate}
+			\item Encrypt the message \texttt{ATTACK} using the affine cipher and the values of $m$ and $b$ above. The ciphertext (encrypted message) should be in the form of characters, not equivalence classes. 
+			\item Find the element $[n]$ of $\mathbb{Z}_{29}$ such that $[10] \odot [n] = [1]$.
+			\item Find the element $[c]$ of $\mathbb{Z}_{29}$ such that $[c] \oplus [5] = [0]$.
+			\item Suppose you receive the message: \texttt{VRQQTG}. This was sent to you by someone using the same values of $m$ and $b$ as before. Decrypt the message. 
+			\item Suppose Eve, an evil eavesdropped, intercepts the encrypted message you created earlier. Describe how Eve could try to break the code and recover the original message without knowing the values of $m$ or $b$. Be creative! 
+		\end{enumerate}	
+	
+\end{enumerate}
+
+
+\textbf{Extra}: In the third screencast, it mentioned that the proof of divisibility by 3 --- which was restricted only to four-digit integers --- could easily be extended to integers of arbitrary length by using the fact that 
+	\begin{center}
+		For all natural numbers $n$, $[10^n] = [1]$ under the relation of congruence mod 3. 
+	\end{center}
+	Prove this fact. (Hint: Notice that it's stated ``for all natural numbers''. What does that suggest regarding proof strategy?)
+
+
+
+\section*{Parameters}
+
+If your group finishes your work, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

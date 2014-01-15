@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{November 28, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Relations} \\
+			\end{large}
+			This is a part-time activity worth 5 points. 
+			
+		\end{center}
+		
+
+\section*{Problem of the Day}
+
+This problem is a riff on the relation introduced in Progress Check 7.9. Define the relation $\sim$ on $\mathbb{Q}$ by declaring $a \sim b$ if and only if $a-b \in \mathbb{Z}$. In the Progress Check (page 379) there are some examples given and an argument that $\sim$ is reflexive. In the Guided Practice you were asked to set up and think about a proof of symmetry and transitivity. 
+
+\begin{enumerate}
+	\item Prove that $\sim$ is symmetric. Start by carefully stating what you will assume and what you will prove. 
+	\item Prove that $\sim$ is transitive. Start by carefully stating what you will assume and what you will prove. 
+	\item Consider the set 
+	\[ \left\{ r \in \mathbb{Q} \, | \,  r \sim \frac{2}{3}  \right\} \]
+	List five different elements of this set. Then give the entire set in set-builder notation without using the $\sim$ symbol. 
+\end{enumerate}
+
+
+
+\section*{Parameters}
+
+If your group finishes your work, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

@@ -1,0 +1,174 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{October 3, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Using the Division Algorithm in a Proof} \\
+			\end{large}
+			This is a FULL-TIME activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problem of the Day}
+
+Today you'll prove the proposition: 
+\begin{proposition}
+	The number $\sqrt{3}$ is irrational. 
+\end{proposition}
+You'll be proving this proposition in two stages, the first of which draws upon what you've learned about the Division Algorithm and its use in setting up cases. 
+
+
+\begin{enumerate}
+	\item Before proving Proposition 1, let's consider the following lemma\footnote{A ``lemma'' is a mini-theorem whose main purpose is to provide justification for a step in a larger proof.}: 
+	
+	\begin{lemma}
+		For every integer $a$, if $a^2$ is divisible by $3$, then $a$ is divisible by $3$. 
+	\end{lemma}
+	
+	\begin{enumerate}
+		\item What does the contrapositive of Lemma 1 say? 
+			\vspace{0.5in}
+
+		\item Let's try to prove Lemma 1 by proving its contrapositive. What are you going to assume, and what are you going to prove? 
+		\begin{itemize}
+			\item We will assume: 
+			\item We will try to prove: 
+		\end{itemize}
+		
+		\textbf{Remember your eventual proof of this Lemma must not treat the statement to be proven as a fact. Don't assume what you are trying to prove is true. }
+		
+		\item What are the possible remainders you could get if you take $a$ and divide it by $3$? 
+		
+			\vspace{0.5in}
+
+		\item Which, if any, of those remainders are ruled out in the contrapositive of Lemma 1? 
+		
+		\vspace{0.5in}
+		
+		\item Set up two cases for proving Lemma 1. 
+		
+		\begin{itemize}
+			\item \textbf{Case 1:} 
+			\item \textbf{Case 2:} 
+		\end{itemize}
+		
+		\item On the very last page, there is space for a formal proof of Lemma 1. Sketch out your proof on a separate page, and then designate one person to write the proof up formally on the last page. 
+	\end{enumerate}
+	
+	\pageturn
+	
+	\item Now that we've proven Lemma 1, we're ready to try a proof of the main Proposition. 
+	\begin{enumerate}
+		\item What overall strategy (direct proof, contraposition, contradiction, etc.) are you going to use? 
+		
+		\vspace{0.5in}
+		
+		\item What are you going to assume, and what are you going to try to show? 
+		
+		\vspace{1in}
+		
+		\item Use the space below or a blank page to sketch out your proof. The proof here might be very similar to the proof that $\sqrt{2}$ is irrational but you will need to use Lemma 1. Think about how Lemma 1 will play a role. Then write your formal proof in the final page. 
+	\end{enumerate}
+	
+\end{enumerate}
+
+
+\vfill
+
+\section*{Extra Problem}
+
+If your group completes the Problem of the Day successfully with time remaining, try this: 
+
+\begin{proposition}
+	The number $\sqrt{5}$ is irrational. 
+\end{proposition}
+
+What's a lemma you might need for this proof? Make sure you prove that as part of your work. \\
+
+Can this method of proof be extended to prove that $\sqrt{6}$ is irrational? Why or why not? \\
+
+
+\emph{Successful completion of each additional problem will add 1 point to both your Class Work score and the overall Class Work total. However, you must attain a score of at least 8/10 on the main Class Work to receive these points. (That is, you've completed all the problems and they are mostly correct.) }	
+
+\section*{Futher practice}
+For more practice, please try the following exercises from \S3.5, pages 153---157: 
+\begin{itemize}
+	\item 6, 7, 11, 12, 17, 18. 
+\end{itemize}
+\textbf{These are all optional. }
+But if you submit writeups of one or more of these that represent good-faith efforts to complete the problem correctly, I will give you feedback on whatever you submit. 
+
+\newpage
+
+\begin{center}
+	\begin{Large}
+		Writeup for Class Work on \S3.5 (October 2)
+	\end{Large}
+	
+\end{center}
+
+\noindent
+\textbf{Lemma 1:} For all integers $a$, if $3$ divides $a^2$, then $3$ divides $a$. \\
+
+\noindent
+\emph{Proof}: 
+
+\vspace{5in}
+
+
+\noindent
+\textbf{Proposition 1:} The number $\sqrt{3}$ is irrational. \\
+
+\noindent
+\emph{Proof}:
+
+\end{document}

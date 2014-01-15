@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{November 9, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Surjective and bijective functions} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+
+\begin{enumerate}
+	\item For each of the functions below, decide whether the function is an surjection or not. If not, give an example that shows this. If so, then give a proof. 
+	\begin{enumerate}
+		\item $A: \mathbb{Z}_6 \rightarrow \mathbb{Z}_6$ given by $A(x) = x^2 + 4 \pmod 6$
+		\item $B: \mathbb{Z}_6 \rightarrow \mathbb{Z}_6$ given by $B(x) = x^3 + 4 \pmod 6$
+		\item $C: \mathbb{N} \rightarrow \mathbb{N}$ given by $C(n) = $ the sum of all the positive divisors of $n$. (Examples: $C(6) = 1 + 2 + 3 + 6 = 12$, $C(10)=18$)
+		\item $D: \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z} $ given by $D(a,b) = (3a, a + b)$.
+	\end{enumerate}
+	
+	\item Define the function $f: \mathbb{N} \rightarrow \mathbb{Z}$ by: 
+	\[ f(n) = \frac{1 + (-1)^n(2n-1)}{4} \quad \forall n \in \mathbb{N} \]
+	Before reading on, compute several outputs of this function, for example $n = 1, 2, \dots, 10$, to give you a feel for how it works and what it does. 
+	\begin{enumerate}
+		\item Is the function $f$ an injection? If so, give a proof. (Hint: Try cases, depending on whether the inputs are even or odd.) 
+		\item Is the function $f$ a surjection? If so, give a proof. (Hint: Try cases, depending on whether the points are positive or negative.) 
+	\end{enumerate}
+
+ 
+
+\end{enumerate}
+
+\section*{Parameters}
+
+If your group finishes your work, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

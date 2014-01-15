@@ -1,0 +1,394 @@
+\documentclass[addpoints]{exam}
+
+% \pagestyle{empty}                       %no page numbers
+% \thispagestyle{empty}                   %removes first page number
+% \setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+
+%% Definitions
+\def\vi{\mathbf{i}}
+\def\vj{\mathbf{j}}
+\def\vk{\mathbf{k}}
+\def\vr{\mathbf{r}}
+\def\vu{\mathbf{u}}
+\def\vv{\mathbf{v}}
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheader{\textbf{MTH 210 (Talbert)}}{\textbf{Exam 2 --- \numpoints \ points}}{\textbf{November 5, 2012}}
+\runningheader{MTH 210}
+{MTH 210 Exam 2, Page \thepage\ of \numpages}
+{Nov 5, 2012}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+\printanswers
+
+
+\begin{document}
+
+		
+\vspace*{0pt}
+
+
+
+\begin{questions}
+
+	
+\uplevel{\emph{Items 1---10 are multiple choice questions that address a variety of learning objectives. Please circle the ONE response you believe is most correct. You do not need to justify your answer.}}
+
+\question[2] If an integer $k$ is congruent to $5 \pmod 7$, it means that
+	\begin{parts}
+		\part The quotient obtained when dividing $k$ by $7$ is $5$
+		\part The quotient obtained when dividing $k$ by $5$ is $7$
+		\part The remainder obtained when dividing $k$ by $7$ is $5$
+		\part The remainder obtained when dividing $k$ by $5$ is $7$
+		\part The remainder obtained when dividing $7$ by $5$ is $k$ 
+	\end{parts}
+	
+	\begin{solution}
+		A. 
+	\end{solution}
+	
+\question[2] The main difference between the Principle of Mathematical Induction (which we can abbreviate ``PMI'') and the Extended Principle of Mathematical Induction (``EPMI'') is 
+	\begin{parts}
+		\part The EPMI uses a different base case than the PMI
+		\part The EPMI allows induction over the set of real numbers
+		\part The EPMI assumes a larger induction hypothesis than the PMI
+		\part The EPMI does not use a base case 
+		\part The EPMI does not use an induction hypothesis at all
+	\end{parts}
+	\begin{solution}
+		A. The EMPI works for propositions where the base case may not be 1. 
+	\end{solution}
+	
+	
+\question[2] 	In the proof that $4$ divides $5^n - 1$, what would be the inductive hypothesis? 	
+	\begin{parts}
+		\part Assume that $4$ divides $5^1 - 1$
+		\part Assume that $4$ divides $5^k - 1$ for \emph{all} $k \in \mathbb{N}$. 
+		\part Assume that $4$ divides $5^k - 1$ for \emph{some} $k \in \mathbb{N}$. 
+		\part Assume that if $4$ divides $5^k - 1$ for some $k \in \mathbb{N}$, then $4$ divides $5^{k+1} - 1$ for all $k \in \mathbb{N}$. 
+		\part Assume that if $4$ divides $5^1 -1$, then $4$ divides $5^k - 1$ for all $k \in \mathbb{N}$.
+	\end{parts}
+	
+	\begin{solution}
+		C. 
+	\end{solution}
+
+\question[2] Suppose $A$ and $B$ are sets such that $\text{card}(A) = 5$ and $\text{card}(B) = 3$. Then $\text{card}(A \times B)$
+	\begin{parts}
+		\part Equals 8
+		\part Equals 15
+		\part Equals 125
+		\part Equals 243
+		\part Is infinite
+	\end{parts}
+	
+	\begin{solution}
+		B. Given an element $(x,y) \in A \times B$, there are 5 choices for the first coordinate and 3 choices for the second, giving 15 possibilities in all. 
+	\end{solution}
+	
+\question[2] Let $A$ and $B$ be sets. If $(a,b) \not \in A \times B$, it means that
+	\begin{parts}
+		\part $a \not \in A$ and $b \not \in B$
+		\part $a \not \in A$ or $b \not \in B$
+		\part $a \in A$ and $b \not \in B$
+		\part $a \not \in A$ and $b \in B$
+		\part None of the above
+	\end{parts}
+
+\begin{solution}
+	B. 
+\end{solution}
+
+\question[2] Suppose $T_n$ is the sequence defined recursively by $T_n = \frac{1}{2} T_{n-1}$ for all $n \geq 2$. Then $T_{10}$
+	\begin{parts}
+		\part Equals $0$
+		\part Equals $1/2048$
+		\part Equals $1/1024$
+		\part Equals $1/512$
+		\part Is impossible to determine based on this information alone
+	\end{parts}
+
+\begin{solution}
+	E. To determine $T_{10}$ we would need a base case for $T$ (that is, we'd need the value of $T_2$). Without knowing the base value, there's no way to tell what $T_{10}$ is. 
+\end{solution}
+
+
+\question[2] Let $A$ and $B$ be sets. If $x \in (A \cap B)^c$, then 
+	\begin{parts}
+		\part $x \not \in A$ and $x \not \in B$
+		\part $x \not \in A$ or $x \not \in B$
+		\part $x \in A - B$
+		\part $x \in B - A$
+		\part None of the above
+	\end{parts}
+	
+	\begin{solution}
+		B. 
+	\end{solution}
+	
+
+\question[2] Which of the following must be explicitly specified when defining a function $f$? 
+	\begin{parts}
+		\part The domain of $f$
+		\part The range of $f$
+		\part The codomain of $f$
+		\part All of the above
+		\part Just (a) and (c)
+	\end{parts}
+	
+	\begin{solution}
+		E. The range of $f$ does not need to be specified -- we can tell what the range is using the definition of $f$. 
+	\end{solution}
+	
+
+\question[2] Let $f: \mathbb{N} \rightarrow \mathbb{R}$ be the function defined by $f(x) = \sqrt{x}$. Then the set of preimages of the number $4$ is 
+	\begin{parts}
+		\part $\emptyset$
+		\part $\{ -2\}$
+		\part $\{ 2 \}$
+		\part $\{ 16 \}$
+		\part $\{ -2, 2\}$
+	\end{parts}
+
+	\begin{solution}
+		D. This is because $f(16) = 4$. 
+	\end{solution}
+
+
+\question[2] Suppose $f$ and $g$ are functions whose domain is the set $\mathbb{R}$ of real numbers and that $f(x) = g(x)$ for all $x$. Then 
+	\begin{parts}
+		\part The range of $f$ equals the range of $g$
+		\part The codomain of $f$ equals the codomain of $g$
+		\part $f = g$ as functions
+		\part All of the above
+		\part None of the above
+	\end{parts}
+
+\begin{solution}
+	D. 
+\end{solution}
+
+
+\question Suppose that $U = \mathbb{N}$ and define the following sets: 
+\begin{itemize}
+	\item $A = \{ x \in \mathbb{N} \, | \, x \geq 7 \}$
+	\item $B = \{ x \in \mathbb{N} \, | \, x \ \text{is odd} \}$
+	\item $C = \{ x \in \mathbb{N} \, | \, x \ \text{is a multiple of 3} \}$
+	\item $D = \{ x \in \mathbb{N} \, | \, x \ \text{is even} \}$
+
+\end{itemize}
+Use the roster method to list the elements of the following sets. You do not need to explain your reasoning. 
+
+	\begin{parts}
+		\part[4] $A^c \cap B^c$ 
+		
+	\begin{solution}
+		Note that $A^c = \{ x \in \mathbb{N} \, | \, x < 7 \} = \{1,2,3,4,5,6\}$ and $B^c$ is just the set of all even natural numbers. Therefore 
+		\[ A^c \cap B^c = \{ 2, 4, 6 \}\]
+	\end{solution}
+		
+		\part[4] $(A \cup B) \cap C$
+		
+\begin{solution}
+	The set $A \cup B$ is the set of natural numbers that are either odd or greater than or equal to 7: 
+	\[ A \cup B = \{ 1, 3, 5, 7, 8, 9, 10, 11, 12, \dots \} \]
+	Intersecting this set with $C$ yields the elements of this set that are multiples of 3: 
+	\[ (A \cup B) \cap C = \{ 3, 9, 12, 15, \dots \} \]
+\end{solution}
+		
+		\part[6] $(A - D) \cup (B - D)$
+		
+		\begin{solution}
+			The set $A - D$ is the set of points in $A$ that are not in $D$, that is, the points in $A$ that are not even: 
+			\[ A - D = \{ 7, 9, 11, 13, \dots \} \]
+			Likewise, $B - D = B$ since $B$ and $D$ are disjoint. So $(A - D) \cup (B - D) = (A - D) \cup B$, the set of all points either in $A -D$ or in $B$: 
+			\[ (A - D) \cup (B - D) = \{ 1, 3, 5, 7, 9, \dots \} \]
+			This is just equal to $B$ itself. 
+		\end{solution}
+		
+		\part[6] $B \times \{ x, y\}$
+		
+		\begin{solution}
+			This set consists of all ordered pairs $(s,t)$ where $s \in B$ and $t \in \{ x,y \}$: 
+			\[ B \times \{ x,y\} = \{ (1, x), (1,y), (3,x), (3,y), (5,x), (5,y), \dots \} \]
+		\end{solution}
+		
+	\end{parts}
+
+
+
+
+\question Define the function $F: \mathbb{N} \rightarrow \mathbb{Z}$ by defining $F(n)$ to be the $n^\text{th}$ Fibonacci number. 
+	\begin{parts}
+		\part[4] State the domain and codomain of this function. (Be sure to label which is which.)
+		
+\begin{solution}
+	The domain is $\mathbb{N}$ and the codomain is $\mathbb{Z}$. 
+\end{solution}
+
+		
+		\part[6] State the images of the numbers $1, 2, 3, \dots, 10$. (This is ten items to compute and state.) You do not need to show your work. 
+		
+\begin{solution}
+	We'll summarize these in a table: 
+	\begin{center}
+		\begin{tabular}{c||c|c|c|c|c|c|c|c|c|c}
+		$n$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 &8  & 9 & 10 \\ \hline
+		$F(n)$ & 1 & 1 & 2 & 3 & 5 & 8 & 13 & 21 & 34 & 55
+		\end{tabular}
+	\end{center}
+\end{solution}
+
+		
+		\part[8] Is the range of this function equal to its codomain? Explain. 
+		
+\begin{solution}
+	\textbf{No}. For example, the number 4 will never be the output of this function because $F(4) = 3$ and $F(5) = 5$, and the function $f$ is clearly increasing, which means it will never go back to 4 in the outputs.  
+\end{solution}		
+
+		\part[8] Consider the function $G: \mathbb{Z} \rightarrow \mathbb{R}$ given by 
+		\[ G(n) = \frac{\left( \frac{1}{2}(1 + \sqrt{5})  \right)^n - \left( \frac{1}{2}(1 - \sqrt{5})  \right)^n}{\sqrt{5}}\]
+		It can be verified that for all natural numbers $n$, $G(n)$ is the $n^\text{th}$ Fibonacci number (see Portfolio Problem 7a). Does this mean $F = G$ as functions? Explain. 
+		
+		\begin{solution}
+			\textbf{The functions $F$ and $G$ are not equal} because their codomains are not equal. The codomain of $F$ is $\mathbb{Z}$ but the codomain of $G$ is $\mathbb{R}$. You could also note that their domains are not equal, either. 
+		\end{solution}
+		
+		
+	\end{parts}
+
+
+% \uplevel{\emph{The next several items are problems to solve. Each item is tagged with a list of learning objectives it assesses. Be sure to give complete, clear, and correct solutions to each, not just answers.}}
+	
+\question[12] Choose EXACTLY ONE of the following true statements and give a formal proof. 
+	\begin{parts}
+		\part For each natural number $n$, $3$ divides $n^3 + 23n$.
+		\part For each natural number $n$, $4^n \equiv 1 \pmod 3$. 
+		\part For all integers $n > 4$, $n^2 < 2^n$. 
+	\end{parts}
+
+\begin{solution}
+	All three of these are best proven by mathematical induction. 
+	\begin{enumerate}
+		\item For the base case, observe that when $n=1$, $n^3 + 23n = 1 + 23 = 24$ and this is clearly divisible by 3. So for the induction step, assume that for some natural number $k$, we have $3$ divides $k^3 + 23k$. We want to show that $3$ divides $(k+1)^3 + 23(k+1)$. In other words, we want to show that there is an integer $q$ such that 
+		\begin{equation}\label{induction1}
+			(k+1)^3 + 23(k+1) = 3q
+		\end{equation}
+	To prove this, take the left side of (\ref{induction1}) and expand it: 
+	\[ k^3 + 3k^2 + 3k + 1 + 23k + 23 \]
+	Rearrange and group the terms as follows: 
+	\begin{equation}\label{ind1b}
+		(k^3 + 23k) + (3k^2 + 3k + 24)
+	\end{equation}
+	By assumption, we know that there exists an integer $a$ such that $k^3 + 23k = 3a$. Substituting this into (\ref{ind1b}) and factoring out 3 when possible, we obtain: 
+	\[ (k^3 + 23k) + (3k^2 + 3k + 24) = 3a + 3(k^2 + k + 8) = 3(a + k^2 + k + 8) \]
+	Since $a$ and $k$ are integers and the set of integers is closed under addition and multiplication, we have that $a + k^2 + k + 8$ is an integer. Therefore we have written $(k^3 + 23k) + (3k^2 + 3k + 24)$ as $3q$ for an integer $q$ (namely $q = a + k^2 + k + 8$). Therefore $3$ divides $(k+1)^3 + 23(k+1)$ as desired. 
+		
+	\item For the base case, observe that when $n=1$, we have $4^n = 4$ and this is clearly congruent to $1 \pmod 3$. So for the induction step, assume that for some natural number $k$, we have $4^k \equiv 1 \pmod 3$. That is, $3$ divides $4^k - 1$. We want to prove that $4^{k+1} \equiv 1 \pmod 3$, that is, $3$ divides $4^{k+1} - 1$. To this end, note that: 
+	\begin{equation}\label{ind2a}
+		4^{k+1} - 1 = 4^{k+1} - 4 + 3 = 4(4^k - 1) + 3
+	\end{equation}
+	Since $3$ divides $4^k-1$, we may write $4^k - 1 = 3a$ for some integer $a$. Substituting this into (\ref{ind2a}) gives: 
+	\begin{equation*}
+		4^{k+1} - 1 = 4(3a) + 3 = 3(4a + 1) 
+	\end{equation*}
+	Since $a$ is an integer, so is $4a + 1$ due to the closure of the set of integers under addition and multiplication. Hence $3$ divides $4^{k+1} - 1$ and therefore $4^{k+1} \equiv 1 \pmod 3$ as desired. 
+
+	\item The base case here is $n=5$. In that case, note that $n^2 = 25$ and $2^n = 32$ so obviously the proposition holds. For the inductive step, suppose $k^2 < 2^k$ for some natural number $k$. We want to prove that $(k+1)^2 < 2^{k+1}$. Looking at the right side, we expand and then use the inductive hypothesis to say: 
+	\begin{equation}\label{ind3a}
+		(k+1)^2 = k^2 + 2k + 1 < 2^k + 2k + 1 
+	\end{equation}
+We will now show that $2k + 1 < k^2$. To see this, note that since $k > 4$, we have $k-1 > 3$ and so
+	\begin{equation}\label{ind3b}
+		(k-1)^2 - 2 > 0
+	\end{equation}
+	Expanding the left side of (\ref{ind3b}) gives: 
+	\begin{equation}
+		0 < (k-1)^2 - 2 = k^2 - 2k + 1 - 2 = k^2 - 2k - 1
+	\end{equation}
+Adding $2k+1$ to the far left and far right sides of this inequality gives 
+	\begin{equation}\label{ind3c}
+		2k+1 < k^2
+	\end{equation}
+	Substituting this into (\ref{ind3a}) gives: 
+	\begin{align*}
+		(k+1)^2 &< 2^k + 2k + 1 & \\
+		        &< 2^k + k^2  & \text{(From (\ref{ind3c}))} \\
+		        &< 2^k + 2^k & \text{(Induction hypothesis)} \\
+		        &= 2 \cdot 2^k & \\
+		       &= 2^{k+1}.
+	\end{align*}
+This is what we wanted to prove. 
+	\end{enumerate}
+\end{solution}
+
+
+
+\question[12] Choose EXACTLY ONE of the following true statements and give a formal proof. In all of these, assume the sets $A,B,$ and $C$ are subsets of some universal set $U$. 
+	\begin{parts}
+		\part Prove that the sets $A \cap B$ and $A - B$ are disjoint. 
+		
+	\begin{solution}
+		We'll use the algebra of sets approach here to prove that $(A \cap B) \cap (A-B) = \emptyset$ (which is what being disjoint means): 
+		\begin{align*}
+			(A \cap B) \cap (A-B) &= (A \cap B) \cap (A \cap B^c) & \text{Basic Property 2} \\ 
+						          &= (A \cap A) \cap (B \cap B^c) & \text{Commutative and Associative Laws} \\
+						          &= (A \cap A) \cap \emptyset    & \text{Every set is disjoint with its complement} \\
+						          &= \emptyset & \text{Property of Empty Set 1} 
+		\end{align*}
+	\end{solution}
+		
+		\part Prove that $A = (A - B) \cup (A \cap B)$. 
+		
+		\begin{solution}
+			Let's use algebra of sets again, starting with the right side:
+			\begin{align*}
+				(A - B) \cup (A \cap B) &= (A \cap B^c) \cup (A \cap B) & \text{Basic Property 2} \\ 
+				                        &= A \cap (B \cup B^c) & \text{Distributive Law 1} \\
+				                        &= A \cap U & \text{Property from Screencast} \\ 
+				                        &= A & \text{Property of the Universal Set 2}
+			\end{align*}
+		\end{solution}
+		
+		\part Prove that $A \times (B-C) = (A \times B) - (A \times C)$. 
+		\begin{solution}
+			We will prove this by proving $A \times (B-C) \subseteq (A \times B) - (A \times C)$ and then proving $(A \times B) - (A \times C) \subseteq A \times (B-C)$. 
+			\begin{description}
+				\item[$(\subseteq)$] Choose $(x,y) \in A \times (B-C)$. We want to show that $(x,y) \in (A \times B) - (A \times C)$. Since $(x,y) \in A \times (B-C)$, we have that $x \in A$ and $y \in B - C$. That is, $y \in B$ and $y \not \in C$. Since $x \in A$ and $y \in B$, we have that $(x,y) \in A \times B$. And since $x \in A$ and $x \not \in C$, we have $(x,y) \not \in A \times C$. Hence $(x,y) \in (A \times B) - (A \times C)$ as desired. 
+			\item[$(\supseteq)$] Choose $(u,v) \in (A \times B) - (A \times C)$. We want to show that $(u,v) \in A \times (B-C)$. Since $(u,v) \in (A \times B) - (A \times C)$, we have that $(u,v) \in A \times B$ and $(u,v) \not \in A \times C$. So $u \in A$ and $v \in B$. If $(u,v) \not \in A \times C$, it means that either $u \not \in A$ or $v \not \in C$. Since we already know $u \in A$, we must conclude that $v \not \in C$. Therefore $u \in A$, $v \in B$, and $v \not \in C$. Hence $v \in B - C$, which makes $(u,v) \in A \times (B-C)$ as desired. 
+			\end{description}
+		\end{solution}
+		
+		
+	\end{parts}
+\end{questions}
+		
+\end{document}

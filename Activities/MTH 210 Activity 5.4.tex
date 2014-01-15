@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{October 24, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Cartesian Products} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+Let $A = \{ 1, 2, 3\}$, $T = \{ 1, 2\}$, $B = \{ a, b\}$, and $C = \{ a, c\}$. We can then form new sets from all the set operations we've studied. For example, $B \cap C = \{ a \}$, so
+\[ A \times (B \cap C) = \{ (1, a), (2, a), (3, a) \}. \]
+
+\begin{enumerate}
+	\item Use the roster method to list all the elements (ordered pairs) in each of the following sets: 
+	\begin{enumerate}
+		\item $A \times B$ 
+		\item $T \times B$
+		\item $A \times C$
+		\item $A \times (B \cap C)$ (We did this above)
+		\item $(A \times B) \cap (A \times C)$
+		\item $A \times (B \cup C)$
+		\item $(A \times B) \cup (A \times C)$
+		\item $A \times (B - C)$
+		\item $(A \times B) - (A \times C)$
+		\item $B \times A$
+	\end{enumerate}
+	
+	\item List all the relationships between the sets in the first part above. In particular, if you see two sets that are equal, or if one set is a subset of another, make a note of that. 
+	
+	\item Choose two of the relationships you noted and prove that the relationship holds in general. 
+	
+\end{enumerate}
+
+\section*{Parameters}
+
+If your group finishes your work, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

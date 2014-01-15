@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{September 7, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Logically Equivalent Statements} \\
+			\end{large}
+		\end{center}
+		
+This is a FULL-TIME activity worth 10 points. Please work on this INDIVIDUALLY for the first half of the time period and complete as much as you can. Then you'll be put into groups to ask questions and then combine your ideas into a single group writeup for the remaining time. 
+
+\begin{enumerate}
+	\item Write the converse and contrapositive of each of the following conditional statements. Be sure to label each.  
+	\begin{enumerate}
+		\item If $p$ is a prime number, then $p > 2$. 
+		\item Given that $f$ has a local extreme value at $x = a$, we can conclude that $f'(a) = 0$. 
+	\end{enumerate}
+	
+	\item Write each of the conditional statements in the first problem as a disjunction (statement involving ``or'') and then write the negation of each of these statements as a conjunction (statement involving ``and''). 
+	
+	% \item Use a truth table to show that $(P \leftrightarrow Q) \equiv ((\neg P) \leftrightarrow (\neg Q))$. 
+	
+	\item Choose any one of the logical equivalencies of Theorem 2.8 other than DeMorgan's Laws and the three Conditional Statements results and prove the logical equivalency using a truth table. 
+	
+	\item Use previously-proven logical equivalencies, like those in Theorem 2.8, and not truth tables to prove that 
+	\[ [P \rightarrow (Q \wedge R) ] \equiv (P \rightarrow Q) \wedge (P \rightarrow R) \]
+	See Progress Check 2.7 and/or Screencast 2.2.4 for similar examples. Hint: As a first step, you could rewrite the conditional statement on the left-hand side as a disjunction using Conditional Statements rule \#2 from Theorem 2.8. 
+	
+\end{enumerate}	
+	
+\subsection*{If you finish all of these...}
+
+Consider the statement: 
+\begin{center}
+	If $a$ divides $bc$, then $a$ divides $b$ or $a$ divides $c$. 
+\end{center}
+Decide which of the following statements is logically equivalent to the above statement, which are negations of this statement, and which are neither equivalent nor negations. Explain your reasoning. 
+	\begin{enumerate}
+		\item If $a$ divides $b$ or $b$ divides $c$, then $a$ divides $bc$. 
+		\item If $a$ does not divide $b$ and $a$ does not divide $c$, then $a$ does not divide $bc$. 
+		\item If $a$ divides $bc$ and $a$ does not divide $c$, then $a$ divides $b$. 
+	\end{enumerate}
+
+
+
+Successful completion of this additional problem will add 2 points to both your Class Work score and the overall Class Work total. However, you must attain a score of at least 8/10 on the main Class Work to receive these points. (That is, you've completed all the problems and they are mostly correct.) 	
+	
+\subsection*{Specifications}
+
+Please hand in a clean copy of your work by the end of your class period. This copy should be written up on paper neatly and in an organized way. All members of the group working on problems should add their names to the paper. Do not include the paper with the problems on it. 
+
+All groups are expected to submit their work by the end of class. I have the right to grant extensions if the majority of groups are working productively but still not completing the problems on time. \emph{However}: Don't expect extensions. Work as if the end of class were a hard deadline. 
+\end{document}

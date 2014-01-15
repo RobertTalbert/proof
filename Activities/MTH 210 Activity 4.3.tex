@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{October 12, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Induction and Recursion} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+\subsection*{Individual work}
+
+Below are four statements about Fibonacci numbers. For each one, do the following: 
+\begin{itemize}
+	\item State \emph{and prove} the base case of a proof by induction for that statement.
+	\item Give a precise statement of the inductive hypothesis of each statement. (``Precise'' means don't just say ``Assume $P(k)$''.)
+	\item Give a precise statement of what you will prove after you assume the inductive hypothesis. 
+\end{itemize}
+
+Here are the statements: 
+\begin{enumerate}
+	\item For each $n \in \mathbb{N}$, $f_{4n}$ is a multiple of $3$. 
+	% \item For each $n \in \mathbb{N}$, $f_{5n}$ is a multiple of $5$. 
+	\item For each $n \in \mathbb{N}$ with $n \geq 2$, $f_1 + f_2 + \cdots + f_{n-1} = f_{n+1} - 1$. 
+	\item For each $n \in \mathbb{N}$, $f_1^2 + f_2^2 + \cdots + f_n^2 = f_n f_{n+1}$. 
+\end{enumerate}
+
+This time you \emph{will not} turn in your individual work. 
+
+
+\subsection*{Group work}
+
+Choose ONE of the following propositions about Fibonacci numbers and give a complete proof. You will submit this proof in a formal writeup at the end of the class. If you finish early, try another. 
+
+\begin{enumerate}
+	\item For each $n \in \mathbb{N}$, $f_{4n}$ is a multiple of $3$. 
+	% \item For each $n \in \mathbb{N}$, $f_{5n}$ is a multiple of $5$. 
+	\item For each $n \in \mathbb{N}$ with $n \geq 2$, $f_1 + f_2 + \cdots + f_{n-1} = f_{n+1} - 1$. 
+	\item For each $n \in \mathbb{N}$, $f_1^2 + f_2^2 + \cdots + f_n^2 = f_n f_{n+1}$. 
+\end{enumerate}
+
+\section*{Parameters}
+
+If your group finishes the proof you're assigned, please hand it in at the end of class. If it is not done by the end of class, it is to be completed as individual homework for Friday's class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

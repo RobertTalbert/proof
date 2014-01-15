@@ -1,0 +1,101 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{October 10, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Other Forms of Mathematical Induction} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+\subsection*{Individual work (5 points)}
+
+Write responses to the following on separate pages. Do these individually; you can ask questions to the professor as he circulates in the room. 
+
+\begin{enumerate}
+	\item Suppose you wanted to prove that $n! > 3^n$. For what natural number values does this appear to be true? Show some work to justify your answer. 
+	
+	\item For each of the following statements, suppose you were going to prove the statement by mathematical induction. Then state: 
+	\begin{itemize}
+		\item The predicate $P(n)$ involved in the statement; 
+		\item What you would need to prove for the base case; 
+		\item What your inductive hypothesis would be (including the quantifier);
+		\item What you would need to prove after assuming the inductive hypothesis; and 
+		\item Whether you would use the Principle of Mathematical Induction, the Extended Principle of Mathematical Induction, or the Second Principle of Mathematical Induction. Give a brief explanation of your reasoning. 
+	\end{itemize}
+	\begin{enumerate}
+		\item For all integers $n > 4$, $2^n > n^2$. 
+		\item Every integer greater than or equal to $12$ can be written as a positive integer multiple of 4 plus a positive integer multiple of 5. (Hint: Remember to identify the predicate first.)
+	\end{enumerate}
+	
+\end{enumerate}
+
+\subsection*{Group work (5 points)}
+
+\begin{enumerate}
+	\item Check your answers together on the individual work portion. 
+	\item Do ONE of the following and write it up formally: 
+	\begin{enumerate}
+		\item Prove that for all integers $n > 4$, $2^n > n^2$.
+		\item Prove that every integer greater than or equal to $12$ can be written as a positive integer multiple of 4 plus a positive integer multiple of 5.
+		\item Consider the function $f(x) = \ln x$. Take the first, second, third, up through the sixth derivative of $f$. Based on your evidence, form a conjecture about the $n^\text{th}$ derivative of this function and then prove it using mathematical induction. 
+	\end{enumerate}
+\end{enumerate}
+	
+\section*{Parameters}
+
+The individual portion of your work will be collected no later than 25 minutes past the hour, so work quickly. If your group finishes the proof you're assigned, please hand it in at the end of class. If it is not done by the end of class, it is to be completed as individual homework for Friday's class. 
+
+\end{document}

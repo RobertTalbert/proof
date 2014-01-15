@@ -1,0 +1,430 @@
+\documentclass[addpoints]{exam}
+
+% \pagestyle{empty}                       %no page numbers
+% \thispagestyle{empty}                   %removes first page number
+% \setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+
+%% Definitions
+\def\vi{\mathbf{i}}
+\def\vj{\mathbf{j}}
+\def\vk{\mathbf{k}}
+\def\vr{\mathbf{r}}
+\def\vu{\mathbf{u}}
+\def\vv{\mathbf{v}}
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheader{\textbf{MTH 210 (Talbert)}}{\textbf{Exam 1 --- \numpoints \ points}}{\textbf{October 1, 2012}}
+\runningheader{MTH 210}
+{MTH 210 Test 1, Page \thepage\ of \numpages}
+{Oct 1, 2012}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+\printanswers
+
+
+\begin{document}
+
+		
+\vspace*{0pt}
+
+
+
+\begin{questions}
+
+	
+\uplevel{\emph{Items 1---10 are multiple choice questions that address a variety of learning objectives. Please circle the ONE response you believe is most correct. You do not need to justify your answer.}}
+
+\question[2] Which of the following are statements? 
+\begin{parts}
+	\part $3^2 + 4^2 = 5^2$. 
+	\part $a^2 + b^2 = c^2$. 
+	\part If $x^2 = 4$, then $x = 2$. 
+	\part All of the above
+	\part Only (a) and (c)
+\end{parts}
+
+\begin{solution}
+	\textbf{E}. Both (a) and (c) are fully quantified, well-constructed declarative sentences whose truth value can be known. On the other hand (b) is a predicate because the sentence is true for some values of $a,b,c$ (for example, $a=b=c=0$) but not true for others ($a=b=c=1$). 
+\end{solution}
+
+\question[2] Every conditional statement $P \rightarrow Q$ is logically equivalent to
+\begin{parts}
+	\part Its converse
+	\part Its contrapositive
+	\part Its negation
+	\part Its equivalent biconditional statement $P \leftrightarrow Q$
+	\part More than one of the above (be ready to specify)
+\end{parts}
+
+\begin{solution}
+	\textbf{B}. This is a basic result of logical equivalence. 
+\end{solution}
+
+\question[2] Let $A = \{ 2, 4, 6, 8\}$ and $B = \{ x \in \mathbb{N} \, | \, x^2 < 100 \}$. Then
+\begin{parts}
+	\part $A \subseteq B$
+	\part $B \subseteq A$
+	\part $A = B$
+	\part All of the above
+	\part None of the above
+\end{parts}
+
+\begin{solution}
+	\textbf{A}. The set $B$ is equal to $\{ -8, -6, -4, -2, 0, 2, 4, 6, 8 \}$. Every element of $A$ belongs to this set, but not vice-versa. 
+\end{solution}
+
+
+\question[2] What is the smallest nonnegative integer that is congruent to 1179 modulo 10?
+\begin{parts}
+	\part $0$
+	\part $1$
+	\part $9$
+	\part $79$
+	\part This number does not exist
+\end{parts}
+
+\begin{solution}
+	\textbf{C}. We see directly that $10 | (1179 - 9)$ and that $9$ is the smallest nonnegative integer for which this is the case. 
+\end{solution}
+
+
+\question[2] 	Consider the statement:
+	\begin{quote}
+		If $a \equiv 0 \pmod {12}$, then $6 | a$. 
+	\end{quote}
+If you tried to prove this using proof by contraposition, you would assume
+	\begin{parts}
+		\part $a \equiv 0 \pmod {12}$
+		\part $a \not \equiv 0 \pmod {12}$
+		\part $6 | a$
+		\part $6 \not | a$
+		\part $a \equiv 0 \pmod {12}$ and $6 \not | a$
+	\end{parts}
+
+	\begin{solution}
+		\textbf{D}. The contrapositive of the statement would say, ``If $6 \not | a$, then $a \not \equiv 0 \pmod {12}$.'' Proof by contraposition is a direct proof of this statement and so we would simply assume the (new) hypothesis.
+	\end{solution}
+
+\question[2] Under which of the following operations is the set of natural numbers closed? 
+		\begin{parts}
+			\part Addition
+			\part Subtraction
+			\part Multiplication
+			\part All of the above
+			\part Just (a) and (c)
+		\end{parts}
+
+		\begin{solution}
+			\textbf{E}. The closure of the natural numbers under addition and multiplication is an axiom. But the set is not closed under subtraction. For example $3 - 5 = -2 \not \in \mathbb{N}$. 
+		\end{solution}
+
+\question[2] The set of irrational numbers 
+	\begin{parts}
+		\part Is closed under addition
+		\part Is closed under division
+		\part Is closed under multiplication
+		\part All of the above
+		\part None of the above
+	\end{parts}
+	
+	\begin{solution}
+		\textbf{E}. The set of irrational numbers is not closed under addition because $\sqrt{2}$ is irrational and so is $-\sqrt{2}$, but the sum of those two numbers is $0$ which is rational. Likewise, $\sqrt{2}/\sqrt{2} = 1$ is rational and so is $\sqrt{2} \cdot \sqrt{2} = 2$, so this set is not closed under any of the operations listed.  
+	\end{solution}
+	
+
+\question[2] Consider the statement: 
+			\begin{quote}
+				There exists no prime number that is congruent to $0$ modulo $4$. 
+			\end{quote}
+		The negation of this statement would say
+		\begin{parts}
+			\part There exists a prime number that is congruent to $0$ modulo $4$.
+			\part There exists a prime number that is not congruent  to $0$ modulo $4$.
+			\part There exists a prime number that is congruent to $1$ modulo $4$. 
+			\part Every prime number is congruent to $0$ modulo $4$.
+			\part Every prime number fails to be congruent to $0$ modulo $4$. 
+		\end{parts}
+
+		\begin{solution}
+			\textbf{A}. The negation of a statement of the form ``There is no...'' is `There is...''.  
+		\end{solution}
+
+
+\question[2] Which of the following is a valid set of cases to be used in a proof involving an integer $n$?
+	\begin{parts}
+		\part Two cases: $n < 0$ and $n > 0$
+		\part Two cases: $n$ prime, $n$ not prime
+		\part Three cases: $n \equiv 0 \pmod 4$, $n \equiv 1 \pmod 4$, and $n \equiv 2 \pmod 4$
+		\part All of the above
+		\part Just (a) and (b)
+	\end{parts}
+	
+	\begin{solution}
+		\textbf{B}. The cases in (b) cover all possibilities of integers, and no integer belongs to both cases at the same time. On the other hand, the cases in (a) and (c) do not cover all possibilities --- there would need to be a case handling $n=0$ in (a) and a case handling $n \equiv 3 \pmod 4$ in (c). 
+	\end{solution}
+	
+	
+\question[2] Consider the statement: 
+\begin{quote}
+	For all integers $a,b,c$, if $a | (bc)$ then either $a | b$ or $a | c$. 
+\end{quote}
+Which of the following is an acceptable counterexample for this statement? 
+	\begin{parts}
+		\part $a = 2$, $b = 4$, $c = 6$
+		\part $a = 2$, $b = 3$, $c = 6$
+		\part $a = 4$, $b = 6$, $c = 2$
+		\part $a = 5$, $b = 6$, $c = 2$
+		\part There are no counterexamples to this statement because the statement is true
+	\end{parts}
+
+	\begin{solution}
+		\textbf{C}. This is the only triple of numbers that satisfies the hypothesis but fails the conclusion. 
+	\end{solution}
+
+
+\uplevel{\emph{The next several items are problems to solve. Each item is tagged with a list of learning objectives it assesses. Be sure to give complete, clear, and correct solutions to each, not just answers.}}
+	
+
+\uplevel{The following item assesses several learning objectives related to methods of proof, phrasing of logical statement, and selection of proof strategy.}
+
+\question Consider the statement: 
+\begin{center}
+	If $x \cdot y$ is even, then $x$ is even or $y$ is even. 
+\end{center}
+	\begin{parts}
+		\part[6] Suppose you were going to prove this by a direct proof. What would you assume, and what would you try to prove? Give the SPECIFIC statements and information you would assume or prove. 
+		
+	\begin{solution}
+		\begin{itemize}
+			\item Assume: $x \cdot y$ is even. 
+			\item Prove: $x$ is even or $y$ is even. 
+		\end{itemize}
+	\end{solution}
+		
+		\part[6] Suppose you were going to prove this by contraposition. What would you assume, and what would you try to prove? Give the SPECIFIC statements and information you would assume or prove. 
+		
+		\begin{solution}
+			\begin{itemize}
+				\item Assume: $x$ is odd and $y$ is odd. Note the change to a conjunction (``and'') because of DeMorgan's Laws.
+				\item Prove: $xy$ is odd. 
+			\end{itemize}
+		\end{solution}
+		
+		\part[6] Suppose you were going to prove this by contradiction. What would you assume, and what would you try to accomplish in a proof? Give the SPECIFIC statements and information you would assume and an idea of what, specifically, what contradiction you might encounter. 
+		
+		\begin{solution}
+	We would assume there exist integers $x,y$ such that $xy$ is even but both $x$ and $y$ are odd. From there, we would likely encounter a contradiction in the form of having $xy$ both even (by assumption) and odd (by mathematical work) simultaneously. (In fact that's what happens if you write out the proof.)
+		\end{solution}
+		
+		\part[2] Of the three methods above, which would you choose to use in proving this statement, and why? 
+	\begin{solution}
+		Your answers may vary here -- just make a choice and explain what draws you to that particular choice. 
+	\end{solution}
+		
+	\end{parts}
+
+
+
+% \question[6] Choose EXACTLY ONE of the following logical equivalencies from Theorem 2.8 and prove it using a truth table. Circle below which ONE part you are doing. 
+% \begin{center}
+% 	On this problem I am working part (circle one): \textbf{A} / \textbf{B} / \textbf{C}. 
+% \end{center}
+% 	\begin{description}
+% 		\item[(A)] $(P \leftrightarrow Q) \equiv (P \rightarrow Q) \wedge (Q \rightarrow P)$
+% 		\item[(B)] $P \vee (Q \wedge R) \equiv (P \vee Q) \wedge (P \vee R)$
+% 		\item[(C)] $P \rightarrow (Q \vee R) \equiv (P \wedge \neg Q) \rightarrow R$
+% 	\end{description}
+	
+
+\uplevel{The following item assesses the learning objectives: \textbf{Use truth tables to determine if two statements are logically equivalent; State the converse and contrapositive of a conditional statement.}}
+	
+\question The \emph{inverse} of the conditional statement ``If $P$, then $Q$'' is the statement ``If not $P$, then not $Q$.'' In notation, the inverse of 	$P \rightarrow Q$ is $\neg P \rightarrow \neg Q$.
+	\begin{parts}
+		\part[6] Using a truth table, determine whether a conditional statement and its inverse are logically equivalent. 
+
+\begin{solution}
+	Here are the truth tables for $P \rightarrow Q$ and $\neg P \rightarrow \neg Q$: 
+	\begin{center}
+		\begin{tabular}{cc|c|ccc}
+		$P$ & $Q$ & $P \rightarrow Q$ & $\neg P$ & $\neg Q$ & $\neg P \rightarrow \neg Q$ \\ \hline
+		T & T & T & F & F & T \\
+		T & F & F & F & T & T \\
+		F & T & T & T & F & F \\
+		F & F & T & T & T & T \\
+		\end{tabular}
+	\end{center}
+
+	We see that the results in the third and sixth columns are not  the same (see rows 2 and 3), so the statement and its inverse are NOT logically equivalent. 
+\end{solution}
+
+		
+		
+		\part[4] Give an example in plain English of a conditional statement and its inverse and explain, again in plain English to someone who does not know truth tables, why the two statements are or are not logically equivalent.
+		
+\begin{solution}
+	Answers here will vary.
+\end{solution}
+		
+		\part[4] Show that the inverse of a conditional statement is logically equivalent to the converse of that conditional statement. (There is more than one way to do this.) 
+		
+	\begin{solution}
+		You could do this with another truth table, but it's simpler to notice that the contrapositive of the inverse is: 
+		\[ \neg (\neg Q) \rightarrow \neg (\neg P) \]
+and this is logically equivalent (by the Double Negation rule) to $Q \rightarrow P$, which is the converse. 
+	\end{solution}	
+		
+		
+	\end{parts}
+
+
+ 
+
+% \question Consider the statement: 
+% \begin{center}
+% 	If $p$ is a prime number, then either $p \equiv 1 \pmod 4$ or $p \equiv 3 \pmod 4$.
+% \end{center}
+% 	\begin{parts}
+% 		\part State the converse of this statement. 
+% 		\part State the contrapositive of this statement. 
+% 		\part Translate the original statement into one that has a universal or existential quantifier on it and write the statement entirely in logical symbols. 
+% 		\part Write the negation of this statement as a quantified statement (using 
+% 	\end{parts}
+
+
+
+\uplevel{The following item assesses the learning objectives: \textbf{Define the term ``open sentence" (a.k.a. ``predicate" or ``propositional function") and distinguish between an open sentence and a logical statement.; Write the contents of a set using the roster method; Determine the truth set of an open sentence; Write the contents of a set using set builder notation.}}
+
+\question Assume that the universal set for this problem is $\mathbb{Z}$. Consider the following sentence: 
+\[ (\exists t \in \mathbb{Z})(t \cdot x = 20) \]
+	\begin{parts}
+		\part[4] Explain why this sentence is \emph{not} a statement but rather a predicate. (``There's a variable in it'' is not a sufficient explanation because some sentences with variables actually are statements. Be specific here.) 
+		
+\begin{solution}
+	This is a predicate because the variable ``x'' is unquantified. The statement is true for some values of $x$, for example $x = 20$ (in which case there would exist a $t \in \mathbb{Z}$ such that $20t = 20$, namely $t = 1$). But the statement is false for other values of $x$, for example $x = 19$, for which there does not exist a $t \in \mathbb{Z}$ such that $19t = 20$. 
+\end{solution}		
+		
+		\part[8] What is the truth set for this predicate? State your answer in set-builder and roster notation and give a brief explanation of your reasoning. 
+		
+\begin{solution}
+	The truth set is the set of all $x$ values that have integer solutions to the equation $tx = 20$. That set in roster notation is
+	\[ \{ \pm 1, \pm 2, \pm 4, \pm 5, \pm 10, \pm 20 \} \]
+One possible correct set-builder notation for this is: 
+	\[ \{ x \in \mathbb{Z} \, | \, x \, \text{divides} \, 20 \} \]
+There could be others. 
+\end{solution}
+		
+		\part[3] Write the negation of the predicate above. 
+		\begin{solution}
+			\[ \neg (\exists t \in \mathbb{Z})(t \cdot x = 20) \equiv (\forall t \in \mathbb{Z})(tx \neq 20) \]
+		\end{solution}
+		
+		
+	\end{parts}
+
+
+\question Here is a collection of questions about integer congruence and divisibility: 
+	\begin{parts}
+		\part[3] Find five integers, at least one of which is negative, that are congruent to 12 modulo 27. 
+		
+		\begin{solution}
+			Here are a few: $-15, 12, 39, 66, 93, 120$. There are obviously more. 
+		\end{solution}
+				
+		\part[6] If $n$ is a positive integer, the \emph{factorial function} $\text{\textbf{fact}}(n)$ is defined by 
+		\[ \text{\textbf{fact}}(n) = n \cdot (n-1) \cdot (n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1 \]
+		For example, $\text{\textbf{fact}}(4) = 4 \cdot 3 \cdot 2 \cdot 1 = 24$. Explain why $\text{\textbf{fact}}(n) \equiv 0 \pmod {10}$ whenever $n \geq 5$. (An ``explaination'' means not exactly a proof, but a convincing, correct, and mathematically precise argument that does not have to be completely formal.)  
+		
+		\begin{solution}
+			If $n \geq 5$, then $\text{\textbf{fact}}(n)$ consists of a string of integers multiplied together that must include $5 \cdot 4 \cdot 3 \cdot 2 \cdot 1$. This equals $120$ which is divisible by $10$. Therefore $\text{\textbf{fact}}(n)$ is divisible by $10$, since we are taking a bunch more integers and multiplying that by 120, and so $\text{\textbf{fact}}(n) \equiv 0 \pmod {10}$. 
+		\end{solution}
+		
+		
+		
+	\end{parts}
+
+
+
+\uplevel{The following item assesses your overall skill at constructing simple proofs.}
+
+\question[12] Below are three true statements. Choose EXACTLY ONE of these and write up a complete formal paragraph for it that adheres to the Writing Guidelines for mathematical work. Do NOT include scratch work or know-show tables. 
+
+	\begin{parts}
+		\part Prove that for all real numbers $a$ and $b$, if $a>0$ and $b>0$ then 
+		\[ \frac{2}{a} + \frac{2}{b} \neq \frac{4}{a+b}  \]
+		
+		\begin{solution}
+			For a contradiction, suppose $a,b > 0$ but 
+			\[ \frac{2}{a} + \frac{2}{b} = \frac{4}{a+b}  \]
+		Clearing the fractions gives: 
+		\[ 2b(a+b) + 2a(a+b) = 4ab \]
+		Multiplying this out and subtracting all the terms onto the left side gives: 
+		\begin{align*}
+			2ab + b^2 + a^2 + 2ab &= 4ab \\
+			a^2 + b^2 + 4ab &= 4ab \\
+			a^2 + b^2 &= 0
+		\end{align*}
+But this is a contradiction because $a,b > 0$, hence $a^2 + b^2 > 0$ and cannot equal $0$. Therefore we must have that $\frac{2}{a} + \frac{2}{b} \neq \frac{4}{a+b}$. 	
+
+		\end{solution}
+		
+		\part Prove that for every positive real number $x$, if $x$ is irrational, then $\sqrt{x}$ is irrational.
+		
+		\begin{solution}
+			We prove this by proving the contrapositive. So assume that $x > 0$ and $\sqrt{x}$ is rational. We will prove that $x$ is rational. Since $\sqrt{x}$ is rational, there exist integers $a,b$ with $b \neq 0$ such that 
+			\[ \sqrt{x} = \frac{a}{b} \]
+		Squaring both sides gives 
+		\[ x = \frac{a^2}{b^2} \]
+		Since the set of integers is closed under multiplication, $a^2$ and $b^2$ are both integers. And since $b \neq 0$, we have $b^2 \neq 0$ as well. Therefore $x$ is a rational number by definition. 
+		\end{solution}
+		
+		
+		\part Prove that for every integer $a$, if $a \equiv 3 \, (\text{mod} \, 8)$, then $a^2 \equiv 1 (\text{mod} \, 8)$.
+		
+		\begin{solution}
+			Suppose that $a \equiv 3 \pmod 8$. We want to show that $a^2 \equiv 1 \pmod 8$. Since $a \equiv 3 \pmod 8$, we know that $8 | (a - 3)$. So there is an integer $q$ such that 
+			\[ a - 3 = 8q \]
+Rewrite this as $a = 8q + 3$. Squaring both sides gives
+\begin{align*}
+	a^2 &= (8q + 3)^2 \\ 
+	    &= 64q^2 + 48q + 9 \\
+	    &= 64q^2 + 48q + 8 + 1 \\
+	    &= 8(8q^2 + 6q + 1) + 1
+\end{align*}
+By the closure of the set of integers under addition and multiplication, $8q^2 + 6q + 1$ is an integer, say $q'$. Therefore we see that $a^2 = 8q' + 1$ and so $a^2 - 1 = 8q'$. Hence $8 | (a^2 - 1)$ and so $a^2 \equiv 1 \pmod 8$ as desired. 
+		\end{solution}
+		
+	\end{parts}
+		
+		
+\end{questions}
+
+		
+\end{document}

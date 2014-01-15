@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+
+\begin{lemma}
+	For every natural number $n$, 
+	\[ [10^n] = \left\{ \begin{array}{rl}
+		[1] & \text{if $n$ is even} \\ 
+		\left[-1\right] & \text{if $n$ is odd}
+	\end{array} \right. \]
+where the equivalence classes come from the equivalence relation of integer congruence mod 11. 
+\end{lemma}
+
+\begin{proof}
+	This is left as an exercise. Hint: Use induction. 
+\end{proof}
+
+\bigskip
+
+\begin{theorem}
+	If $n$ is a 5-digit integer such that the difference between its odd- and even-numbered digits is divisible by 11, then $n$ is divisible by 11. 
+\end{theorem}
+
+\begin{proof}
+	Suppose $n$ is is a 5-digit integer such that the difference between its odd- and even-numbered digits is divisible by 11. Write $n$ in its base-10 form: 
+	\begin{equation}\label{base10}
+		n = d_4 \times 10^4 + d_3 \times 10^3 + d_2 \times 10^2 + d_1 \times 10^1 + d_0 		
+	\end{equation}
+We are assuming that $11$ divides $(d_4 + d_2 + d_0) - (d_3 + d_1)$, so in terms of equivalence classes under the relation of integer congruence modulo 11, we have:  
+	\begin{equation}\label{eleven}
+		[(d_4 + d_2 + d_0) - (d_3 + d_1)] = [0]
+	\end{equation}
+We want to show $11$ divides $n$, which we can do by proving that $[n] = [0]$ under the relation of congruence modulo 11. To this end, take equivalence classes of both sides of (\ref{base10}) mod 11: 
+	\begin{equation*}
+		[n] = [d_4 \times 10^4 + d_3 \times 10^3 + d_2 \times 10^2 + d_1 \times 10^1 + d_0]
+	\end{equation*}
+Now using the properties of the modular arithmetic operations $\oplus$ and $\odot$ mod 11, we have: 
+\begin{align*}
+	[n] &= [d_4 \times 10^4 + d_3 \times 10^3 + d_2 \times 10^2 + d_1 \times 10^1 + d_0] \\
+	&= ([d_4] \odot [10^4]) \oplus ([d_3] \odot [10^3]) \oplus ([d_2] \odot [10^2]) \oplus ([d_1] \odot [10^1]) \oplus [d_0] 
+\end{align*}
+By the Lemma, we can substitute for the classes of powers of 10: 
+\begin{align*}
+	[n] &= ([d_4] \odot [10^4]) \oplus ([d_3] \odot [10^3]) \oplus ([d_2] \odot [10^2]) \oplus ([d_1] \odot [10^1]) \oplus [d_0] \\
+	&= ([d_4] \odot [1]) \oplus ([d_3] \odot [-1]) \oplus ([d_2] \odot [1]) \oplus ([d_1] \odot [-1]) \oplus [d_0] \\
+	&= [d_4] \oplus [-d_3] \oplus [d_2] \oplus [-d_1] \oplus [d_0] \\ 
+	&= [d_4 + d_2 + d_0 - (d_3 + d_1)] \\
+	&= [0]
+\end{align*}
+The last line is true because of (\ref{eleven}) above. Therefore $[n] = [0]$, so $11$ divides $n$ as desired. 
+\end{proof}
+
+\end{document}

@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{September 19, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: More Methods of Proof} \\
+			\end{large}
+		\end{center}
+
+
+\begin{enumerate}
+
+\item Prove that for every positive real number $x$, if $x$ is irrational, then $\sqrt{x}$ is irrational. (\emph{Hint}: What's the contrapositive of this statement? Also, make sure you know the precise definition of a rational number before you start proving anything.) 
+
+\begin{proof}
+	We will prove this statement by proving the contrapositive. That is, we will show that for every positive real number $x$, if $\sqrt{x}$ is rational, then $x$ is rational. To that end, suppose $x$ is a positive real number such that $\sqrt{x}$ is rational. Then by definition there exist integers $a,b$ with $b \neq 0$ such that 
+	\begin{equation}\label{rationalsqrt}
+		\sqrt{x} = \frac{a}{b}
+	\end{equation}
+	Squaring both sides of (\ref{rationalsqrt}) gives 
+	\[ x = \frac{a^2}{b^2} \]
+	Since $a,b \in \mathbb{Z}$ with $b \neq 0$, we know by the closure of the set of integers under multiplication that $a^2, b^2 \in \mathbb{Z}$. We also know that $b^2 \neq 0$ since $b \neq 0$. Therefore $x$ is rational, which is what we wanted to show. 
+\end{proof}
+
+
+
+\item Suppose we have a right triangle whose hypotenuse has length $c$, and the lengths of the other sides are $a$ and $b$. Prove that this right triangle is isosceles if and only if its area equals $\dfrac{1}{4}c^2$. 
+
+\begin{proof}
+	First assume that the right triangle in question is isosceles. Then by definition, $b = a$. We want to show that the area of the triangle is $\dfrac{1}{4}c^2$. The area of the triangle is half the base times the height. In our case, the base and height are equal, so: 
+	\begin{equation}\label{area1}
+		\text{Area} = \frac{1}{2}ab = \frac{1}{2}a^2
+	\end{equation}
+Since this triangle is a right triangle, we can use the Pythagorean Theorem to relate the hypotenuse and side lengths: 
+\begin{equation}\label{pt}
+	c^2 = a^2 + b^2 = a^2 + a^2 = 2a^2
+\end{equation}
+Solving (\ref{pt}) for $a^2$ gives 
+\[ a^2 = \frac{1}{2}c^2 \]
+Substituting this expression back into (\ref{area1}) gives: 
+\[ \text{Area} = \frac{1}{2}a^2 = \frac{1}{2}\left(\frac{1}{2}c^2 \right) = \frac{1}{4}c^2 \]
+Therefore the area is $\dfrac{1}{4}c^2$, which is what we wanted to show. \\
+
+For the converse, assume that the area of the right triangle is $\dfrac{1}{4}c^2$. We want to show that the triangle is isosceles, that is, that $a=b$. The area of the triangle is equal to half the base times the height, that is: 
+\begin{equation}\label{area2}
+	\text{Area} = \frac{1}{2}ab
+\end{equation}
+Since we are assuming that this area also equals $\dfrac{1}{4}c^2$, we can set these two area expressions equal to each other: 
+\begin{equation*}\label{area3}
+	\frac{1}{2}ab = \frac{1}{4}c^2 
+\end{equation*}
+Therefore $c^2 = 2ab$ by multiplying both sides of this by $4$. 
+
+The Pythagorean Theorem says that the hypotenuse and side lengths are related by: 
+\[ c^2 = a^2 + b^2 \]
+Substituting $c^2 = 2ab$ into this and using algebra, we obtain: 
+\begin{align*}
+	% a^2 + b^2 &= c^2 \\
+	a^2 + b^2 &= 2ab \\
+	a^2 - 2ab + b^2 &= 0 \\
+	(a - b)^2 &= 0
+\end{align*}
+Since $(a-b)^2 = 0$, it follows that $a-b= 0$, from which we obtain $a=b$ which is what we wanted. 
+\end{proof}
+	
+\end{enumerate}	
+
+\end{document}

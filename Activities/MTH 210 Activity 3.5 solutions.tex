@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{October 2, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+	
+\begin{center}
+	\begin{Large}
+		Writeup for Class Work on \S3.5 (October 2)
+	\end{Large}
+	
+\end{center}
+
+\noindent
+\textbf{Lemma 1:} For all integers $a$, if $3$ divides $a^2$, then $3$ divides $a$. \\
+
+\noindent
+\emph{Proof}: We will prove the contrapositive. So assume $3$ does not divide $a$, and we will show that $3$ does not divide $a^2$. Since $3$ does not divide $a$, the Division Algorithm gives us two cases to consider: (1) the remainder obtained when dividing $a$ by $3$ is $1$, and (2) the remainder obtained when dividing $a$ by $3$ is $2$. 
+
+\begin{description}
+	\item[Case 1:] Suppose the remainder obtained when dividing $a$ by $3$ is $1$. Then there exists an integer $q$ such that $a = 3q + 1$. We want to show that $3$ does not divide $a^2$, so let us get an expression for $a^2$ first: 
+	\begin{align*}
+		a^2 &= (3q + 1)^2 \\
+		&= 9q^2 + 6q + 1 \\
+		&= 3(3q^2 + 2q) + 1
+	\end{align*}
+From the last line, closure of the set of integers under multiplication and addition tells us that $3q^2 + 2q$ is an integer, which we will call $x$. So we can write $a^2$ as $3x + 1$ with $x$ an integer. This means the remainder obtained when dividing $a^2$ by $3$ is $1$, and hence $3$ does not divide $a^2$. 
+	\item[Case 2:] Suppose the remainder obtained when dividing $a$ by $3$ is $2$. Then there exists an integer $q$ such that $a = 3q + 2$. We want to show that $3$ does not divide $a^2$, so get an expression for $a^2$ : 
+	\begin{align*}
+		a^2 &= (3q + 2)^2 \\
+		&= 9q^2 + 12q + 4 \\
+		&= 3(3q^2 + 4q + 1) + 1
+	\end{align*}
+Closure of the set of integers under multiplication and addition tells us that $3q^2 + 4q + 1$ is an integer, which we will call $y$. So we can write $a^2$ as $3y + 1$ with $y$ an integer. This means the remainder obtained when dividing $a^2$ by $3$ is $1$, and hence $3$ does not divide $a^2$.
+\end{description}
+Since $3$ does not divide $a^2$ in either case, the lemma is proven. \hfill $\blacksquare$
+
+\bigskip
+
+\noindent
+\textbf{Proposition 1:} The number $\sqrt{3}$ is irrational. \\
+
+\noindent
+\emph{Proof}: For a contradiction, suppose $\sqrt{3}$ is rational. Then there exist integers $a,b$ such that 
+\[ \sqrt{3} = \frac{a}{b} \]
+and the fraction $a/b$ is in lowest form. Square both sides to get: 
+\[ 3 = \frac{a^2}{b^2} \]
+Clearing fractions gives us 
+\begin{equation}\label{eqn}
+	3b^2 = a^2
+\end{equation}
+From (\ref{eqn}) we see that $3$ divides $a^2$. By Lemma 1, this means $3$ divides $a$, so write $a = 3k$ for some integer $k$. Substituting this expression back into (\ref{eqn}) gives: 
+\begin{equation}\label{eqn2}
+	3b^2 = (3k)^2 = 9k^2
+\end{equation}
+From (\ref{eqn2}) we have $b^2 = 3k^2$. This means $3$ divides $b^2$ and so by Lemma 1, $3$ divides $b$. But this is a contradiction, because now $a$ and $b$ share a common factor of $3$, which violates our assumption that $a/b$ is in lowest form. Therefore it cannot be the case that $\sqrt{3}$ is rational; hence $\sqrt{3}$ is irrational as desired. \hfill $\blacksquare$
+\end{document}

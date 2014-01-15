@@ -1,0 +1,262 @@
+\documentclass[addpoints]{exam}
+
+% \pagestyle{empty}                       %no page numbers
+% \thispagestyle{empty}                   %removes first page number
+% \setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+
+%% Definitions
+\def\vi{\mathbf{i}}
+\def\vj{\mathbf{j}}
+\def\vk{\mathbf{k}}
+\def\vr{\mathbf{r}}
+\def\vu{\mathbf{u}}
+\def\vv{\mathbf{v}}
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheader{\textbf{MTH 210 (Talbert)}}{\textbf{Exam 2 --- \numpoints \ points}}{\textbf{November 5, 2012}}
+\runningheader{MTH 210}
+{MTH 210 Exam 2, Page \thepage\ of \numpages}
+{Nov 5, 2012}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+\begin{document}
+
+		
+\vspace*{0pt}
+
+\noindent
+Name: \underline{\hspace{2in}} \\
+
+
+\noindent
+\textbf{Instructions}: Welcome to Exam 2. You may use the $3 \times 5$ notecard with notes from Exam 1, a new $3 \times 5$ notecard made specifically for this exam, and a calculator. You may NOT use any device that can communicate  with another device. The backs of each page are blank; use them if needed. On all questions other than multiple choice, give complete and correct solutions; answers without accompanying work will be given no credit. 
+
+The test will end at the normal ending time of your class (10:50am for Section 01 and 11:50am for Section 02). No extensions or extra time will be given unless you have received prior permission from the instructor.
+
+\begin{questions}
+
+	
+\uplevel{\emph{Items 1---10 are multiple choice questions that address a variety of learning objectives. Please circle the ONE response you believe is most correct. You do not need to justify your answer.}}
+
+\question[2] If an integer $k$ is congruent to $5 \pmod 7$, it means that
+	\begin{parts}
+		\part The quotient obtained when dividing $k$ by $7$ is $5$
+		\part The quotient obtained when dividing $k$ by $5$ is $7$
+		\part The remainder obtained when dividing $k$ by $7$ is $5$
+		\part The remainder obtained when dividing $k$ by $5$ is $7$
+		\part The remainder obtained when dividing $7$ by $5$ is $k$ 
+	\end{parts}
+	
+\question[2] The main difference between the Principle of Mathematical Induction (which we can abbreviate ``PMI'') and the Extended Principle of Mathematical Induction (``EPMI'') is 
+	\begin{parts}
+		\part The EPMI uses a different base case than the PMI
+		\part The EPMI allows induction over the set of real numbers
+		\part The EPMI assumes a larger induction hypothesis than the PMI
+		\part The EPMI does not use a base case 
+		\part The EPMI does not use an induction hypothesis at all
+	\end{parts}
+	
+\question[2] 	In the proof that $4$ divides $5^n - 1$, what would be the inductive hypothesis? 	
+	\begin{parts}
+		\part Assume that $4$ divides $5^1 - 1$
+		\part Assume that $4$ divides $5^k - 1$ for \emph{all} $k \in \mathbb{N}$. 
+		\part Assume that $4$ divides $5^k - 1$ for \emph{some} $k \in \mathbb{N}$. 
+		\part Assume that if $4$ divides $5^k - 1$ for some $k \in \mathbb{N}$, then $4$ divides $5^{k+1} - 1$ for all $k \in \mathbb{N}$. 
+		\part Assume that if $4$ divides $5^1 -1$, then $4$ divides $5^k - 1$ for all $k \in \mathbb{N}$.
+	\end{parts}
+
+\question[2] Suppose $A$ and $B$ are sets such that $\text{card}(A) = 5$ and $\text{card}(B) = 3$. Then $\text{card}(A \times B)$
+	\begin{parts}
+		\part Equals 8
+		\part Equals 15
+		\part Equals 125
+		\part Equals 243
+		\part Is infinite
+	\end{parts}
+	
+\question[2] Let $A$ and $B$ be sets. If $(a,b) \not \in A \times B$, it means that
+	\begin{parts}
+		\part $a \not \in A$ and $b \not \in B$
+		\part $a \not \in A$ or $b \not \in B$
+		\part $a \in A$ and $b \not \in B$
+		\part $a \not \in A$ and $b \in B$
+		\part None of the above
+	\end{parts}
+
+\pageturn
+
+\question[2] Suppose $T_n$ is the sequence defined recursively by $T_n = \frac{1}{2} T_{n-1}$ for all $n \geq 2$. Then $T_{10}$
+	\begin{parts}
+		\part Equals $0$
+		\part Equals $1/2048$
+		\part Equals $1/1024$
+		\part Equals $1/512$
+		\part Is impossible to determine based on this information alone
+	\end{parts}
+
+\question[2] Let $A$ and $B$ be sets. If $x \in (A \cap B)^c$, then 
+	\begin{parts}
+		\part $x \not \in A$ and $x \not \in B$
+		\part $x \not \in A$ or $x \not \in B$
+		\part $x \in A - B$
+		\part $x \in B - A$
+		\part None of the above
+	\end{parts}
+
+\question[2] Which of the following must be explicitly specified when defining a function $f$? 
+	\begin{parts}
+		\part The domain of $f$
+		\part The range of $f$
+		\part The codomain of $f$
+		\part All of the above
+		\part Just (a) and (c)
+	\end{parts}
+
+\question[2] Let $f: \mathbb{N} \rightarrow \mathbb{R}$ be the function defined by $f(x) = \sqrt{x}$. Then the set of preimages of the number $4$ is 
+	\begin{parts}
+		\part $\emptyset$
+		\part $\{ -2\}$
+		\part $\{ 2 \}$
+		\part $\{ 16 \}$
+		\part $\{ -2, 2\}$
+	\end{parts}
+
+
+\question[2] Suppose $f$ and $g$ are functions whose domain is the set $\mathbb{R}$ of real numbers and that $f(x) = g(x)$ for all $x$. Then 
+	\begin{parts}
+		\part The range of $f$ equals the range of $g$
+		\part The codomain of $f$ equals the codomain of $g$
+		\part $f = g$ as functions
+		\part All of the above
+		\part None of the above
+	\end{parts}
+
+
+\pageturn
+
+\question Suppose that $U = \mathbb{N}$ and define the following sets: 
+\begin{itemize}
+	\item $A = \{ x \in \mathbb{N} \, | \, x \geq 7 \}$
+	\item $B = \{ x \in \mathbb{N} \, | \, x \ \text{is odd} \}$
+	\item $C = \{ x \in \mathbb{N} \, | \, x \ \text{is a multiple of 3} \}$
+	\item $D = \{ x \in \mathbb{N} \, | \, x \ \text{is even} \}$
+
+\end{itemize}
+Use the roster method to list the elements of the following sets. You do not need to explain your reasoning. 
+
+	\begin{parts}
+		\part[4] $A^c \cap B^c$ 
+		
+		\vspace{1.5in}
+		
+		\part[4] $(A \cup B) \cap C$
+		
+		\vspace{1.5in}
+		
+		\part[6] $(A - D) \cup (B - D)$
+		
+		\vspace{1.5in}
+		
+		\part[6] $B \times \{ x, y\}$
+	\end{parts}
+
+
+
+\pageturn
+
+\question Define the function $F: \mathbb{N} \rightarrow \mathbb{Z}$ by defining $F(n)$ to be the $n^\text{th}$ Fibonacci number. 
+	\begin{parts}
+		\part[4] State the domain and codomain of this function. (Be sure to label which is which.)
+		
+		\vspace{1in}
+		
+		\part[6] State the images of the numbers $1, 2, 3, \dots, 10$. (This is ten items to compute and state.) You do not need to show your work. 
+		
+		\vspace{2in}
+		
+		\part[8] Is the range of this function equal to its codomain? Explain. 
+		
+		\vspace{2in}
+		
+		\part[8] Consider the function $G: \mathbb{Z} \rightarrow \mathbb{R}$ given by 
+		\[ G(n) = \frac{\left( \frac{1}{2}(1 + \sqrt{5})  \right)^n - \left( \frac{1}{2}(1 - \sqrt{5})  \right)^n}{\sqrt{5}}\]
+		It can be verified that for all natural numbers $n$, $G(n)$ is the $n^\text{th}$ Fibonacci number (see Portfolio Problem 7a). Does this mean $F = G$ as functions? Explain. 
+	\end{parts}
+
+
+
+\pageturn
+
+% \uplevel{\emph{The next several items are problems to solve. Each item is tagged with a list of learning objectives it assesses. Be sure to give complete, clear, and correct solutions to each, not just answers.}}
+	
+\question[12] Choose EXACTLY ONE of the following true statements and give a formal proof. 
+	\begin{parts}
+		\part For each natural number $n$, $3$ divides $n^3 + 23n$.
+		\part For each natural number $n$, $4^n \equiv 1 \pmod 3$. 
+		\part For all integers $n > 4$, $n^2 < 2^n$. 
+	\end{parts}
+
+\pageturn
+
+\question[12] Choose EXACTLY ONE of the following true statements and give a formal proof. In all of these, assume the sets $A,B,$ and $C$ are subsets of some universal set $U$. 
+	\begin{parts}
+		\part Prove that the sets $A \cap B$ and $A - B$ are disjoint. 
+		\part Prove that $A = (A - B) \cup (A \cap B)$. 
+		\part Prove that $A \times (B-C) = (A \times B) - (A \times C)$. 
+	\end{parts}
+
+\pageturn
+
+\uplevel{The following items are for reflection and application. They are to be completed outside of class and returned to me by email (\textbf{talbertr@gvsu.edu}) before \textbf{noon on Tuesday, November 6}. Please use as your subject line: 
+\begin{center}
+	[Lastname] [section] final item \#exam2
+\end{center}
+where [Lastname] is replaced by your last name and [section] is replaced with either 01 or 02. The hashtag (\#exam2) is important for filing purposes, so please remember to include it. \textbf{No late submissions will be accepted. } Also please type your responses directly into the body of your email --- \textbf{do not send email attachments this time}. 
+}
+
+\question[6] Please take some time to reflect on the Exam you just took, and respond to these questions. Please be substantive and specific. You CAN lose points on these questions if you aren't. 
+	\begin{itemize}
+		\item What item on this exam shows your best work, and why do you think so? Note that ``your best work'' may not be the problem you feel most sure about --- it might be a problem you are not completely sure of, but which shows your best effort or which shows your attainment of the learning objectives most clearly. 
+		\item What are some concepts and learning objectives from the exam that you still need to work on? Why do you think so? 
+		\item How do you see the content from this Exam (Division Algorithm, induction, sets, functions) connecting back to the content from the first exam? Give specific examples, and more than just one or two of them. 
+	\end{itemize}
+
+\question[4] Give me a status report on your experience in the class so far. Address the questions: 
+\begin{itemize}
+	\item What's working particularly well for you in terms of your learning? In particular, if something has been improved since the last time you were asked this question on Exam 1, please point it out. 
+	\item As we move into the last 4--5 weeks of the semester, what's something that we can do that will help your learning and attainment of the course objectives? 
+\end{itemize}
+
+	
+\end{questions}
+
+		
+\end{document}

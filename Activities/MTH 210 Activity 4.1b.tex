@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{October 8, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Mathematical Induction, day 2} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+\begin{enumerate}
+	\item (2 points) \ Write a complete proof of one of the five propositions you worked with on Friday (your choice). If you finished this on Friday, just make sure you have a clean writeup to turn in today. 
+	\begin{description}
+		\item[Proposition 1:] For each natural number $n$, 
+		\[ 2 + 5 + 8 + \cdots + (3n-1) = \frac{n(3n+1)}{2} \]
+		\item[Proposition 2:] For each natural number $n$, $4^n \equiv 1 \pmod 3$. 
+		\item[Proposition 3:] For each natural number $n$, $x-y$ divides $x^n - y^n$. 
+		\item[Proposition 4:] For each natural number $n$, $3$ divides $n^3 + 23n$.
+		\item[Proposition 5:] Suppose we draw $n$ straight lines in the plane (which may cross but not lie coincident with each other), dividing it into a number of regions. Then for every natural number $n$, we may color each region either red or blue in such a way that no two neighboring regions have the same color. 
+	\end{description}
+	
+	
+	\item (8 points) \ Below are some problems to consider that involve creating a conjecture and then proving it using mathematical induction. \emph{Choose one} to do in your groups. 
+	\begin{enumerate}
+		\item Calculate the values of
+		\[ \frac{1}{2} + \frac{1}{4} \qquad \frac{1}{2} + \frac{1}{4} + \frac{1}{8} \qquad \frac{1}{2} + \frac{1}{4} + \frac{1}{8}+ \frac{1}{16}\]
+		Based on your results, make a conjecture about the value of the sum 
+		\[ \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots + \frac{1}{2^n} \]
+for $n \in \mathbb{N}$. Then prove that conjecture using mathematical induction. What is the base case? What is the inductive hypothesis? What are you going to try to prove after you assume the inductive hypothesis? 
+
+		\item Calculate the values of
+		\[ \frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} \qquad \frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + \frac{1}{3 \cdot 4} \qquad \frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + \frac{1}{3 \cdot 4} + \frac{1}{4 \cdot 5}\]
+		Based on your results, make a conjecture about the value of the sum 
+		\[ \frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + \frac{1}{3 \cdot 4} + \cdots + \frac{1}{n(n+1)} \]
+for $n \in \mathbb{N}$. Then prove that conjecture using mathematical induction. What is the base case? What is the inductive hypothesis? What are you going to try to prove after you assume the inductive hypothesis?
+	\end{enumerate}
+	
+	
+\end{enumerate}
+
+
+\end{document}

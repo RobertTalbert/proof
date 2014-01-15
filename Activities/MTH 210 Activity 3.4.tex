@@ -1,0 +1,180 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{September 26, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Proof using Cases} \\
+			\end{large}
+		\end{center}
+		
+This is a FULL-TIME activity worth 10 points. \\
+
+
+\begin{enumerate}
+	\item Consider the following proposition: 
+	\begin{quote}
+		For all integers $a,b$ and $d$ with $d \neq 0$, if $d$ divides $a$ or $d$ divides $b$, then $d$ divides $ab$. 
+	\end{quote}
+	\begin{enumerate}
+		\item Notice the hypothesis to this proposition is a disjunction. How could you use this fact to set up a direct proof of the proposition that involves two cases? What would those two cases be? 
+		
+		\vspace{0.7in}
+		
+		\item In the first of those two cases, what are you assuming? And what do you want to show? 
+		
+		\begin{itemize}
+			\item \textbf{Assuming}: 
+			\item \textbf{Proving}: 
+		\end{itemize}
+		
+		\item Make a ``forward'' step by taking the assumption from Case 1 and rewriting it using a definition. 
+		
+		\vspace{0.7in}
+		
+		\item Make a ``backward'' step by taking the conclusion of Case 1 and rewriting it using a definition. 
+		
+		\vspace{0.7in}
+		
+		\item In the space below, sketch out a proof of Case 1. (``Sketching'' a proof means writing some kind of a rough --- but reasonably complete and correct --- version of the proof. That could be a know-show table or a paragraph-style proof that is not completely up to the writing standards yet.) 
+		
+		\vspace{1.5in}
+		
+		\item Now move on to Case 2. What will you assume? What to you want to prove? 
+		
+			\begin{itemize}
+				\item \textbf{Assuming}: 
+				\item \textbf{Proving}: 
+			\end{itemize}
+		
+		\item Make a ``forward'' step by taking the assumption from Case 2 and rewriting it using a definition. 
+		
+		\vspace{0.7in}
+		
+		\item Make a ``backward'' step by taking the conclusion of Case 2 and rewriting it using a definition. 
+		
+		
+		\vspace{0.7in}
+		
+		
+		\item In the space below, sketch out a proof of Case 2.
+		
+		\vspace{1.5in}
+		
+		\item Now in the space below, write a complete, formal paragraph proof of the entire proposition. 
+	\end{enumerate}
+
+\newpage
+
+	
+	\item Consider the following proposition:  
+	\begin{quote}
+		For each integer $n$, if $n$ is odd, then $8 | (n^2 -1)$.  
+	\end{quote}
+	\begin{enumerate}
+		
+		\item This is a conditional statement, so you have three basic methods for proving it: direct proof, contraposition, or contradiction. Which one seems most likely to work? Why? 
+		
+		\vspace{1in}
+		
+		\item If you used a direct proof on this statement, what would you assume? And what do you want to prove? 
+		
+			\begin{itemize}
+				\item \textbf{Assuming}: 
+				\item \textbf{Proving}: 
+			\end{itemize}
+		
+		\item Make a ``forward'' step by rewriting your assumption using a definition. 
+		
+		\vspace{0.7in}
+		
+		\item Make a ``backward'' step by rewriting your conclusion using a definition. 
+		
+		\vspace{0.7in}
+		
+		\item You've assumed something now about $n$ and want to show something about $n^2 - 1$. Make a substitution based on what you know at this point and do some basic algebra to get an expression for $n^2 - 1$:
+		\[ n^2 - 1 = \hspace{2in} \] 
+		
+		\item Can you tell just from this expression that $n^2 - 1$ is divisible by $8$? Why or why not? 
+		
+		\vspace{0.7in}
+		
+		\item Think of two cases you could introduce at this point that might help the proof move forward. 
+		
+		\begin{itemize}
+			\item Case 1: 
+			\item Case 2: 
+		\end{itemize}
+		
+		\item Sketch a proof of Case 1 below. 
+		
+		\vspace{1.5in}
+		
+		\item Sketch a proof of Case 2 below. 
+		
+		\vspace{1.5in}
+		
+		\item Now write up a formal proof for the whole proposition. 
+		
+		
+	\end{enumerate}
+	
+
+	
+\end{enumerate}
+
+% \subsection*{If your group does not finish all of these...}
+% 
+% If you do not get finished with all of the above problems within the class period, you are to finish them up as homework and submit a writeup at the next class. If this happens, you can work alone or with your group, or with a subset of your group. If you collaborate with anyone else, please prepare ONE writeup for all of you and submit it. 
+% 	
+% \subsection*{If you do finish all of these...}
+% 
+% Prove the following proposition: 
+% \begin{quote}
+% 	There are no natural numbers $a$ and $n$ (with $n \geq 2$) such that $a^2 + 1 = 2^n$. 
+% \end{quote}
+% Hint: This sounds like a good candidate for a proof by contradiction. \\
+% 
+% Successful completion of each additional problem will add 1 point to both your Class Work score and the overall Class Work total. However, you must attain a score of at least 8/10 on the main Class Work to receive these points. (That is, you've completed all the problems and they are mostly correct.) 	
+% 	
+% \subsection*{Specifications}
+% 
+% Please hand in a clean copy of your work by the end of your class period. This copy should be written up on paper neatly and in an organized way. All members of the group working on problems should add their names to the paper. Do not include the paper with the problems on it. 
+% 
+% All groups are expected to submit their work by the end of class. I have the right to grant extensions if the majority of groups are working productively but still not completing the problems on time. \emph{However}: Don't expect extensions. Work as if the end of class were a hard deadline. 
+\end{document}

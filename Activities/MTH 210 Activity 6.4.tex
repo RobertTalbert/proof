@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{November 12, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Composition of functions} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+\begin{enumerate}
+	\item For each of the following, give an example of functions $f: A \rightarrow B$ and $g: B \rightarrow C$ that satisfy the stated conditions, or explain why no such example exists. (You can use diagrams for many, if not all, of these.)
+	\begin{enumerate}
+		\item The function $f$ is an injection but the function $g \circ f$ is not an injection.
+		\item The function $f$ is a surjection but the function $g \circ f$ is not a surjection.
+		\item The function $f$ is not a surjection, but the function $g \circ f$ is a surjection. 
+		\item The function $f$ is not an injection, but the function $g \circ f$ is an injection. 
+	\end{enumerate}
+	
+	\item Let $A,B,C$ be nonempty sets and assume that $f: A \rightarrow B$ and $g: B \rightarrow C$ are functions. Choose one of the following to prove: 
+	\begin{enumerate}
+		\item Prove that if $g \circ f: A \rightarrow C$ is an injection, then $f: A \rightarrow B$ is an injection. 
+		\item Prove that if $g \circ f: A \rightarrow C$ is a surjection, then $f: A \rightarrow B$ is a surjection. 
+	\end{enumerate}
+	Hint: Both of these are conditional statements. A direct proof of either of these may not be the best approach. 
+	
+\end{enumerate}
+
+\section*{Parameters}
+
+If your group finishes your work, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

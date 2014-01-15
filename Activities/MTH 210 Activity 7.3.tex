@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{November 28, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: Relations} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problem of the Day}
+
+\begin{enumerate}
+	\item Let $\mathbb{Z}_9 = \{ 0, 1, 2, 3, 4, 5, 6, 7, 8\}$. Define the relation $\sim$ on $\mathbb{Z}_9$ as follows: For all $a,b \in \mathbb{Z}_9$, $a \sim b$ if and only if $a^2 \equiv b^2 \pmod 9$. It can be proven (although you do not have to do this right now) that this is an equivalence relation on $\mathbb{Z}_9$. 
+	\begin{enumerate}
+		\item Fill in the following table: 
+		\begin{center}
+			\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+			$x$ & 0 & 1 & 2 & 3 & 4 & 5 & 6  & 7 & 8 \\ \hline
+			$x^2 \pmod 9$ & & & & & & & &
+			\end{tabular}
+		\end{center}
+		\item List all the elements of $[0]$. Hint: There are three of them. 
+		\item Find all the distinct equivalence classes under this relation and list their contents in roster form. Hint: There are four classes, and they are not all the same size. 
+	\end{enumerate}
+	
+	% \item Consider the set $A = \mathbb{Z} \times (\mathbb{Z} - \{0\})$. This set is the same as $\{ (a,b) \in \mathbb{Z} \times \mathbb{Z} \, | \, b \neq 0\}$. Define a relation $\sim$ on this set $A$ as follows: 
+	% \begin{center}
+	% 	For all $(a,b)$ and $(c,d) \in A$, $(a,b) \sim (c,d)$ if and only if $ad = bc$. 
+	% \end{center}
+	% \begin{enumerate}
+	% 	\item Prove that this relation is reflexive. 
+	% 	\item Prove that this relation is symmetric. (What are you going to assume? What are you going to prove? And what does this mean in context?)
+	% 	\item Prove that this relation is transitive. (What are you going to assume? What are you going to prove? And what does this mean in context?) 
+	% 	\item Why was it necessary to include the restriction that $b \neq 0$ in the definition of the set $A$? 
+	% 	\item You've now proven that this relation $\sim$ is an equvalence relation on $\mathbb{Z} \times (\mathbb{Z} - \{0\})$. 
+	% \end{enumerate}
+	
+	\item Define the relation $\sim$ on $\mathbb{R}$ as follows: For $x,y \in \mathbb{R}$, $x \sim y$ if and only if $xy \geq 0$. 
+	\begin{enumerate}
+		\item Prove that this relation is reflexive. 
+		\item Prove that this relation is symmetric. 
+		\item Prove that this relation is transitive. 
+		\item You've now proven that this relation is an equivalence relation, so we can talk about its equivalence classes. How many distinct equivalence classes does this relation have? Prove that your answer is right and list all the distinct classes. 
+	\end{enumerate}
+	
+\end{enumerate}
+
+
+
+\section*{Parameters}
+
+If your group finishes your work, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

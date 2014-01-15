@@ -1,0 +1,124 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}               %no paragraph indents
+
+\usepackage{fullpage}
+\usepackage[tmargin = 0.5in, bmargin = 1in, hmargin = 1in]{geometry}     %1-inch margins
+\geometry{letterpaper}                  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Default packages
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\def\pageturn{\vfill
+\begin{flushright}
+	\begin{small}
+		Continued $\rightarrow$
+	\end{small}
+\end{flushright}
+\newpage}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+
+\def\ra{\rightarrow}
+
+\begin{document}
+	
+	\thispagestyle{empty}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\thispagestyle{fancy}
+	\lhead{Prof. Talbert}
+	\chead{MTH 210: Communicating in Mathematics}
+	\rhead{October 31, 2012}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}	
+	
+	\vspace*{0in}
+
+		\begin{center}
+			\begin{large}
+			\textbf{Class Work: More about functions} \\
+			\end{large}
+			This is a full-time activity worth 10 points. 
+			
+		\end{center}
+		
+
+\section*{Problems of the Day}
+
+\begin{enumerate}
+	
+	\item Recall that $\mathbb{Z}_6 = \{0, 1, 2, 3, 4, 5\}$. Define $f: \mathbb{Z}_6 \rightarrow \mathbb{Z}_6$ by $f(x) = x^2 + 4 \pmod 6$, and define $g: \mathbb{Z}_6 \rightarrow \mathbb{Z}_6$ by $g(x) = (x+1)(x+4) \pmod 6$. 
+		\begin{enumerate}
+			\item Fill in the following table of values: 
+			% \begin{center}
+			% 	\begin{tabular}{c|c|c}
+			% 		$x$ & $f(x)$ & $g(x)$ \\ \hline
+			% 		0 & \hspace{0.2in}  & \hspace{0.2in} \\ 
+			% 		1 & & \\
+			% 		2 & & \\ 
+			% 		3 & & \\ 
+			% 		4 & & \\ 
+			% 		5 & & 
+			% 	\end{tabular}
+			% \end{center}
+			
+			\begin{center}
+				\begin{tabular}{c||cccccc}
+				$x$ & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+				$f(x)$ & & & & & & \\ \hline
+				$g(x)$ & & & & & & 
+				\end{tabular}
+			\end{center}
+			
+			
+			\item Is the function $f$ equal to the function $g$? Why or why not? 
+		\end{enumerate}
+
+
+	\item A \textbf{$2 \times 2$ matrix over $\mathbb{R}$} is a rectangular array of real numbers with two rows and two columns. Here's an example of such a matrix: 
+	\[ \begin{bmatrix*}[r]
+		2 & 5 \\
+		0 & -1
+	\end{bmatrix*} \]
+The plural of ``matrix'' is \emph{matrices}. 
+The set of all $2 \times 2$ matrices over $\mathbb{R}$ is denoted $\mathcal{M}_2(\mathbb{R})$. If we have the matrix 
+\[ A = \begin{bmatrix*}[r]
+	a & b \\ c & d 
+\end{bmatrix*}\]
+then the determinant of $A$, denoted $\det(A)$, is the real number $ad - bc$. For example, 
+\[ \det\left( \begin{bmatrix*}[r]
+	2 & 5 \\
+	0 & -1
+\end{bmatrix*} \right) = (2)(-1) - (5)(0) = -2.
+\]	
+Matrices and matrix operations like the determinant have many applications in real problems and form a large core of what you learn in MTH 227, Linear Algebra. For now, let's explore the determinant in terms of functions. 
+	\begin{enumerate}
+		% \item Make up three other $2 \times 2$ matrices over $\mathbb{R}$ and calculate their determinants. 
+		\item The process of calculating the determinant of a $2 \times 2$ matrix can be thought of as a function. What is the domain and what is the codomain of this function? 
+		\item Does the determinant function have the ``no splitting'' property that we want all functions to have? That is, is it the case that no matrix ever has two different determinants? If so, explain. If not, give an example. 
+		\item Is it possible for two different $2 \times 2$ matrices to have the same determinant? That is, is it possible for two different inputs to the determinant function to have the same output? If so, give an example. If not, explain. 
+		\item If we choose an arbitrary element in the codomain of the determinant function, can we always find an element in the domain that maps to it? If so, explain. If not, give an example. 
+	\end{enumerate}
+\end{enumerate}
+
+\section*{Parameters}
+
+If your group finishes your work, please hand it in at the end of class. If all groups finish by the end of class, we will take time to debrief the solutions to one or more of these. 
+
+\end{document}

@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+
+% \setlength{\oddsidemargin}{-.35in}
+% %\setlength{\evensidemargin}{-.5in}
+% \setlength{\textwidth}{7.2in}
+% \setlength{\topmargin}{-0.95in}
+% \setlength{\textheight}{9.95in}
+
+\pagestyle{empty}                       %no page numbers
+\thispagestyle{empty}                   %removes first page number
+\setlength{\parindent}{0in}
+
+
+\usepackage{fullpage}
+
+\usepackage{palatino}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphics}
+
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true, linkcolor=blue,  anchorcolor=blue,  
+citecolor=blue, filecolor=blue, menucolor=blue, pagecolor=blue,  
+urlcolor=blue,pdftitle={Boelkins PPS12}} 
+
+\newcommand{\ds}{\ensuremath{\displaystyle}}
+\pagestyle{empty}
+
+
+\begin{document}
+	
+\begin{center}
+	\begin{large}
+		\textbf{MTH 210: Communicating in Mathematics} \\ 
+		Proof Portfolio Problems 6 and 7
+	\end{large}
+	
+\end{center}
+
+\framebox{
+\parbox{\textwidth}{
+\begin{center}
+	\textbf{Problem 6} \\ 
+	\emph{Choose either Problem 6A or Problem 6B to do. }
+\end{center}
+
+
+
+\noindent
+\textbf{Problem 6A:} Make a conjecture about a formula for the product 
+$$\left( 1 - \frac{1}{4}\right) \cdot \left( 1 - \frac{1}{9}\right) \cdot \left( 1 - \frac{1}{16}\right) \cdot \cdots \cdot \left( 1 - \frac{1}{n^2}\right)$$
+where $n$ is a natural number. Then, state your conjecture as a proposition and prove it.
+
+\medskip
+
+\textbf{Problem 6B:} Make a conjecture about a formula for the product 
+$$\left(1 + \frac{1}{2}\right)\left(1 - \frac{1}{3}\right)\left(1 + \frac{1}{4}\right)\cdots \left(1 + \frac{(-1)^n}{n}\right)$$
+where $n$ is a natural number. Then, state your conjecture as a proposition and prove it.
+}}
+	
+	
+\bigskip
+
+\framebox{
+\parbox{\textwidth}{
+\begin{center}
+	\textbf{Problem 7} \\ 
+	\emph{Choose ONE of the following problems to do. }
+\end{center}
+
+All of the problems in this group involve the Fibonacci sequence, defined by 
+\[ f_1 = 1 \quad f_2 = 1 \quad f_n = f_{n-1} + f_{n-2} \ \text{if} \ n \geq 3 \]
+
+\noindent
+\textbf{Problem 7A:}  Let $\alpha = \dfrac{1+ \sqrt{5}}{2}$ and $\beta = \dfrac{1 - \sqrt{5}}{2}$. Show that for all natural numbers $n$, 
+\[ f_n = \frac{\alpha^n - \beta^n}{\alpha-\beta}\]
+
+\medskip
+
+\textbf{Problem 7B:} Prove that for all natural numbers $n$, $f_{5n}$ is a multiple of $5$. 
+
+\medskip
+
+\textbf{Problem 7C:} (For those with some familiarity with matrix multiplication.) Prove that for all natural numbers $n \geq 2$, 
+$$\left[ 
+\begin{array}{rr}
+	1 & 1 \\
+	1 & 0
+\end{array}
+\right]^n = 
+\left[ 
+\begin{array}{cc}
+	f_{n+1} & f_n \\
+	f_n & f_{n-1}
+\end{array}
+\right]$$
+Matrix exponentiation $A^n$ is defined as $\underbrace{A \cdot \cdots \cdot A}_\text{$n$ times}$.
+
+}}
+
+	
+\end{document}
